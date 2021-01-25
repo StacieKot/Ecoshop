@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+      content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+   <title></title>
+   <link href="css/style.css" rel="stylesheet" type="text/css">
+   <link href="css/index.css" rel="stylesheet" type="text/css">
+   <link href="css/slider.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+   <header>
+      <div class="container top-header">
+         <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
+         </div>
+         <nav class="navigation">
+            <input type="checkbox" name="menu" id="menu">
+            <label for="menu" class="menu-label">
+               <span></span>
+               <span></span>
+               <span></span>
+            </label>
+            <ul class="menu">
+               <li>
+                  <input type="checkbox" name="submenu" id="submenu1">
+                  <label for="submenu1" class="submenu-label">Продукция</label>
+                  <a href="store.html">Продукция</a>
+                  <ul class="submenu">
+                     <li><a href="store.html">Пальто и куртки</a></li>
+                     <li><a href="store.html">Джемперы и кардиганы</a></li>
+                     <li><a href="store.html">Свитшоты и худи</a></li>
+                     <li><a href="store.html">Спортивная одежда</a></li>
+                     <li><a href="store.html">Платья</a></li>
+                     <li><a href="store.html">Футболки и топы</a></li>
+                     <li><a href="store.html">Джинсы и деним</a></li>
+                     <li><a href="store.html">Брюки</a></li>
+                     <li><a href="store.html">Обувь</a></li>
+                  </ul>
+               </li>
+               <li class="submenu-container">
+                  <input type="checkbox" name="submenu" id="submenu2">
+                  <label for="submenu2" class="submenu-label">О проекте</label>
+                  <a href="index.html">О проекте</a>
+                  <ul class="submenu">
+                     <li><a href="index.html">Наша история</a></li>
+                     <li><a href="index.html">Экологичность</a></li>
+                     <li><a href="index.html">Команда</a></li>
+                     <li><a href="index.html">Карьера</a></li>
+                     <li><a href="index.html">Бренды</a></li>
+                  </ul>
+               </li>
+               <li><a href="blog.html">Блог</a></li>
+               <li><a href="#">Контакты</a></li>
+            </ul>
+         </nav>
+         <div class="nav-icon">
+            <div class="icon-user" onclick="">
+               <div class="popup login">
+                  <a href="#" title="Войти через">Войти через</a>
+                  <ul class="social-media-links">
+                     <li><a class="icon-twitter" href="https://twitter.com/" target="_blank"></a></li>
+                     <li><a class="icon-facebook" href="https://www.facebook.com/" target="_blank"></a></li>
+                     <li><a class="icon-instagram" href="https://www.instagram.com/" target="_blank"></a></li>
+                     <li><a class="icon-youtube" href="https://www.youtube.com/" target="_blank"></a></li>
+                     <li><a class="icon-mail" href="mailto:stacie.kot@gmail.com" target="_blank"></a></li>
+                  </ul>
+                  <form method="GET" action="login">
+                     <input type="text" name="user-name" placeholder="Имя пользователя">
+                     <input type="password" name="password" placeholder="Пароль">
+                     <a href="#" title="Восстановление пароля">Забыли пароль?</a>
+                     <button class="button" type="submit">Вход</button>
+                  </form>
+               </div>
+            </div>
+            <div class="icon-cart" onclick=""><span>2</span>
+               <div class="popup cart">
+                  <div class="row-cart">
+                     <div class="item-img">
+                        <img src="img/3.webp" alt="" title="">
+                     </div>
+                     <div class="item-info">
+                        <div>Платье</div>
+                        <div class="text">Вечернее платье</div>
+                     </div>
+                     <div class="item-result">
+                        <div>1</div>
+                        <div>150р.</div>
+                        <button type="submit">&#10006;</button>
+                     </div>
+                  </div>
+                  <div class="row-cart">
+                     <div class="item-img">
+                        <img src="img/2.webp" alt="" title="">
+                     </div>
+                     <div class="item-info">
+                        <div>Топ</div>
+                        <div class="text">Спортивный топ</div>
+                     </div>
+                     <div class="item-result">
+                        <div>1</div>
+                        <div>150р.</div>
+                        <button type="submit">&#10006;</button>
+                     </div>
+                  </div>
+                  <div class="sum clearfix">
+                     <div>Сумма</div>
+                     <div>320р.</div>
+                  </div>
+                  <a href="cart.html" class="button">Перейти в корзину</a>
+               </div>
+            </div>
+            <div class="icon-search" onclick="">
+               <div class="popup search-form">
+                  <form method="GET" action="search">
+                     <input type="search" name="search" placeholder="Поиск">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="top-slider">
+         <input type="radio" id="top-slide1" name="top-slider" checked>
+         <label for="top-slide1"></label>
+         <div class="slide slide1">
+            <div class="container">
+               <h1>
+                  <span>Будь яркой этой</span>
+                  <span>весной вместе</span>
+                  <span>c новинками</span>
+                  <span>2021 года</span>
+               </h1>
+               <a href="store.html" class="button">Перейти</a>
+            </div>
+         </div>
+         <input type="radio" id="top-slide2" name="top-slider">
+         <label for="top-slide2"></label>
+         <div class="slide slide2">
+            <div class="container">
+               <h1> <span>Скидка 15% </span>
+                  <span>на весь</span>
+                  <span>офисный </span>
+                  <span>гардероб</span>
+               </h1>
+               <h3>Для встреч онлайн и офлайн</h3>
+               <a href="store.html" class="button">Перейти</a>
+            </div>
+         </div>
+         <input type="radio" id="top-slide3" name="top-slider">
+         <label for="top-slide3"></label>
+         <div class="slide slide3">
+            <div class="container">
+               <h1><span>Подборка</span>
+                  <span>подароков </span>
+                  <span>для лучшей</span>
+                  <span>подруги</span>
+               </h1>
+               <h3>Из коллекций 2021 года</h3>
+               <a href="store.html" class="button">Смотреть</a>
+            </div>
+         </div>
+      </div>
+   </header>
+
+
+
+   <main>
+      <div class="container">
+         <div class="text-box">
+            <h2>Новые поступления</h2>
+            <div class="text">Новинки 2021 года по самым выгодным ценам</div>
+         </div>
+      </div>
+      <div class="new-arrival-row">
+         <div class="img-container">
+            <picture>
+               <source srcset="img/source/index/new1.webp" type="image/webp">
+               <img src="img/source/index/new1.jpg" alt="Девушка в спортивной одежде">
+            </picture>
+            <div class="img-container-hover">
+               <div class="buttons">
+                  <a href="store.html" class="icon-search"></a>
+               </div>
+            </div>
+            <a href="store.html" class="cell-title">
+               <h3>Жизнь в движении</h3>
+            </a>
+         </div>
+         <div class="img-container">
+            <picture>
+               <source srcset="img/source/index/new2.webp" type="image/webp">
+               <img src="img/source/index/new2.jpg" alt="Девушка в сером лонгсливе на голубом фоне">
+            </picture>
+            <div class="img-container-hover">
+               <div class="buttons">
+                  <a href="store.html" class="icon-search"></a>
+               </div>
+            </div>
+            <a href="store.html" class="cell-title">
+               <h3>Базовый гардероб</h3>
+            </a>
+         </div>
+         <div class="img-container">
+            <picture>
+               <source srcset="img/source/index/new3.webp" type="image/webp">
+               <img src="img/source/index/new3.jpg" alt="Девушка в шубе из эко-меха">
+            </picture>
+            <div class="img-container-hover">
+               <div class="buttons">
+                  <a href="store.html" class="icon-search"></a>
+               </div>
+            </div>
+            <a href="store.html" class="cell-title">
+               <h3>Будет тепло и красиво</h3>
+            </a>
+         </div>
+         <div class="img-container">
+            <picture>
+               <source srcset="img/source/index/new4.webp" type="image/webp">
+               <img src="img/source/index/new4.jpg" alt="Девушка в нарядном платье">
+            </picture>
+            <div class="img-container-hover">
+               <div class="buttons">
+                  <a href="store.html" class="icon-search"></a>
+               </div>
+            </div>
+            <a href="store.html" class="cell-title">
+               <h3>Ищем повод нарядиться</h3>
+            </a>
+         </div>
+      </div>
+      <div class="new-arrival-row">
+         <div class="img-container">
+            <picture>
+               <source srcset="img/source/index/new5.jpg" type="image/webp">
+               <img src="img/source/index/new5.jpg" alt="Девушка в дубленке из эко-кожи">
+            </picture>
+            <div class="img-container-hover">
+               <div class="buttons">
+                  <a href="store.html" class="icon-search"></a>
+               </div>
+            </div>
+            <a href="store.html" class="cell-title">
+               <h3>"Деним всегда незаменим"</h3>
+            </a>
+         </div>
+         <div class="img-container">
+            <picture>
+               <source srcset="img/source/index/new6.webp" type="image/webp">
+               <img src="img/source/index/new6.jpg" alt="Девушка в хлопковом свитшоте">
+            </picture>
+            <div class="img-container-hover">
+               <div class="buttons">
+                  <a href="store.html" class="icon-search"></a>
+               </div>
+            </div>
+            <a href="store.html" class="cell-title">
+               <h3>Свитшоты из 100% хлопка</h3>
+            </a>
+         </div>
+         <div class="img-container">
+            <picture>
+               <source srcset="img/source/index/new7.webp" type="image/webp">
+               <img src="img/source/index/new7.jpg" alt="Девушка в черном платье в цветочный принт">
+            </picture>
+            <div class="img-container-hover">
+               <div class="buttons">
+                  <a href="store.html" class="icon-search"></a>
+               </div>
+            </div>
+            <a href="store.html" class="cell-title">
+               <h3>Цветочные принты</h3>
+            </a>
+         </div>
+         <div class="img-container">
+            <picture>
+               <source srcset="img/source/index/new8.webp" type="image/webp">
+               <img src="img/source/index/new8.jpg" alt="Девушка в джинсах на голубом фоне">
+            </picture>
+            <div class="img-container-hover">
+               <div class="buttons">
+                  <a href="store.html" class="icon-search"></a>
+               </div>
+            </div>
+            <a href="store.html" class="cell-title">
+               <h3>Эко-кожа с заботой о природе</h3>
+            </a>
+         </div>
+      </div>
+      <div class="container">
+         <div class="text-box">
+            <h2>Популярные продукты</h2>
+            <div class="text">Самые актуальные и популярные продукты, а также товары с самыми выгодными скидками</div>
+         </div>
+         <div class="products-slider">
+            <div class="slide slide1">
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art13.webp" type="image/webp">
+                        <img src="img/products/catalog/art13.jpg" alt="Девушка в платье-миди с цветочным принтом">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art13">
+                                 <label for="art13" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Платье</h3>
+                     </a>
+                     <a href="product.html" class="text">Reformation / Летнее платье миди в цветочный принт с
+                        вырезом</a>
+                     <a href="product.html">170 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art3.webp" type="image/webp">
+                        <img src="img/products/catalog/art3.jpg" alt="Девушка в розовом лонгсливе c V-образным вырезом">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art3">
+                                 <label for="art3" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Лонгслив</h3>
+                     </a>
+                     <a href="product.html" class="text">Kotn / Лонгслив c V-м вырезом </a>
+                     <a href="product.html">80 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art1.webp" type="image/webp">
+                        <img src="img/products/catalog/art1.jpg" alt="Девушка в пальто">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art1">
+                                 <label for="art1" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Пальто</h3>
+                     </a>
+                     <a href="product.html" class="text">Reformation / Пальто свободного кроя</a>
+                     <a href="product.html">220 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art4.webp" type="image/webp">
+                        <img src="img/products/catalog/art4.jpg" alt="Девушка в свитере молочного оттенка">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art4">
+                                 <label for="art4" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Свитер</h3>
+                     </a>
+                     <a href="product.html" class="text">Kotn / Свитер с круглым вырезом</a>
+                     <a href="product.html">100 р.</a>
+                  </div>
+               </div>
+            </div>
+            <div class="slide slide2">
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/dresses/dress4.webp" type="image/webp">
+                        <img src="img/products/catalog/dresses/dress4.jpg" alt="Белое хлопковое платье-рубашка">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="dress4">
+                                 <label for="dress4" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Платье</h3>
+                     </a>
+                     <a href="product.html" class="text">Vero Moda / Хлопковое платье-рубашка</a>
+                     <a href="product.html">120 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/dresses/dress7.webp" type="image/webp">
+                        <img src="img/products/catalog/dresses/dress7.jpg" alt="Розовое свободное платье">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="dress7">
+                                 <label for="dress7" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Платье</h3>
+                     </a>
+                     <a href="product.html" class="text">ASOS DESIGN / Розовое свободное платье</a>
+                     <a href="product.html">150 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/dresses/dress5.webp" type="image/webp">
+                        <img src="img/products/catalog/dresses/dress5.jpg" alt="Платье миди с абстрактным принтом">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="dress5">
+                                 <label for="dress5" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Платье</h3>
+                     </a>
+                     <a href="product.html" class="text">Y.A.S / Платье с абстрактным принтом</a>
+                     <a href="product.html">150 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/dresses/dress9.webp" type="image/webp">
+                        <img src="img/products/catalog/dresses/dress9.jpg"
+                           alt="Розовое платье макси в рубчик из органического хлопка Monki Li">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="dress9">
+                                 <label for="dress9" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Платье</h3>
+                     </a>
+                     <a href="product.html" class="text">Monki Li / Платье из органического
+                        хлопка</a>
+                     <a href="product.html">150 р.</a>
+                  </div>
+               </div>
+            </div>
+            <div class="slide slide3">
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/dresses/dress3.webp" type="image/webp">
+                        <img src="img/products/catalog/dresses/dress3.jpg" alt="Чёрное платье с вырезом">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="dress3">
+                                 <label for="dress3" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Платье</h3>
+                     </a>
+                     <a href="product.html" class="text">Reformation / Чёрное платье</a>
+                     <a href="product.html">155 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art6.webp" type="image/webp">
+                        <img src="img/products/catalog/art6.jpg" alt="Куртка-рубашка свободного кроя">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art6">
+                                 <label for="art6" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Рубашка</h3>
+                     </a>
+                     <a href="product.html" class="text">Reformation / Куртка-рубашка свободного кроя</a>
+                     <a href="product.html">160 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art7.webp" type="image/webp">
+                        <img src="img/products/catalog/art7.jpg" alt="Блейзер свободного кроя">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art7">
+                                 <label for="art7" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Блейзер</h3>
+                     </a>
+                     <a href="product.html" class="text">Reformation / Блейзер свободного кроя</a>
+                     <a href="product.html">210 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art8.webp" type="image/webp">
+                        <img src="img/products/catalog/art8.jpg" alt="Белый топ из 100% льна">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art8">
+                                 <label for="art8" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Топ</h3>
+                     </a>
+                     <a href="product.html" class="text">Reformation / Белый топ из 100% льна</a>
+                     <a href="product.html">90 р.</a>
+                  </div>
+               </div>
+            </div>
+            <div class="slide slide4">
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/dresses/dress1.webp" type="image/webp">
+                        <img src="img/products/catalog/dresses/dress1.jpg" alt="Платье с цветочным принтом">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="dress1">
+                                 <label for="dress1" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Платье</h3>
+                     </a>
+                     <a href="product.html" class="text">Reformation / Летнее платье</a>
+                     <a href="product.html">150 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art5.webp" type="image/webp">
+                        <img src="img/products/catalog/art5.jpg" alt="Розовый свитшот на пуговицах">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art5">
+                                 <label for="art5" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Свитшот</h3>
+                     </a>
+                     <a href="product.html" class="text">Reformation / Розовый свитшот </a>
+                     <a href="product.html">150 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art9.webp" type="image/webp">
+                        <img src="img/products/catalog/art9.jpg" alt="Бежевый топ с воротником">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art9">
+                                 <label for="art9" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Топ</h3>
+                     </a>
+                     <a href="product.html" class="text">Reformation / Топ с воротником</a>
+                     <a href="product.html">75 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art10.webp" type="image/webp">
+                        <img src="img/products/catalog/art10.jpg" alt="Голубое летнее платье с цветочным принтом">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art10">
+                                 <label for="art10" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Платье</h3>
+                     </a>
+                     <a href="product.html" class="text">Reformation / Платье с цветочным принтом</a>
+                     <a href="product.html">145 р.</a>
+                  </div>
+               </div>
+            </div>
+            <div class="slide slide5">
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/dresses/dress6.webp" type="image/webp">
+                        <img src="img/products/catalog/dresses/dress6.jpg" alt="Плиссированный комбинезон без рукавов">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="dress6">
+                                 <label for="dress6" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Комбинезон</h3>
+                     </a>
+                     <a href="product.html" class="text">COS / Плиссированный комбинезон</a>
+                     <a href="product.html">180 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/dresses/dress8.webp" type="image/webp">
+                        <img src="img/products/catalog/dresses/dress8.jpg" alt="Бежевое свободное платье миди в клетку из
+                        органического
+                        хлопка">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="dress8">
+                                 <label for="dress8" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Платье</h3>
+                     </a>
+                     <a href="product.html" class="text">Monki Felia /Платье миди в клетку</a>
+                     <a href="product.html">140 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art11.webp" type="image/webp">
+                        <img src="img/products/catalog/art11.jpg" alt=" Спортивная куртка из мягкого денима">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art11">
+                                 <label for="art11" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Куртка</h3>
+                     </a>
+                     <a href="product.html" class="text">ASOS DESIGN / Спортивная куртка</a>
+                     <a href="product.html">150 р.</a>
+                  </div>
+               </div>
+               <div class="product-cell">
+                  <div class="img-container">
+                     <picture>
+                        <source srcset="img/products/catalog/art12.webp" type="image/webp">
+                        <img src="img/products/catalog/art12.jpg" alt="Спортивная куртка из мягкого денима">
+                     </picture>
+                     <div class="img-container-hover">
+                        <div class="buttons">
+                           <div><a href="product.html" class="icon-search"></a></div>
+                           <div>
+                              <form method="get" action="add-to-cart">
+                                 <button type="submit" class="icon-cart"></button>
+                              </form>
+                           </div>
+                           <div>
+                              <form method="get" action="set-a-like">
+                                 <input type="checkbox" name="like" id="art12">
+                                 <label for="art12" class="icon-heart"></label>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="links">
+                     <a href="product.html">
+                        <h3>Куртка</h3>
+                     </a>
+                     <a href="product.html" class="text">ASOS DESIGN / Куртка из мягкого денима</a>
+                     <a href="product.html">130 р.</a>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="wrapper">
+         <div class="container">
+            <div class="text-box">
+               <h2>Блог</h2>
+               <div class="text">Ecoshop собирает для вас самую интеренсую и актульную информацию в сфере экологичной
+                  моды и устойчивого экологического развития.
+               </div>
+            </div>
+            <div class="blog-items-wrapper">
+               <div class="blog-item blog-item-1">
+                  <a href="blog.html" alt="Как Covid-19 влияет на моду">
+                     <div>Февраль</div>
+                     <div class="date">02</div>
+                     <h3>Как Covid-19 влияет на моду</h3>
+                     <div class="text">Защитные маски для лица во время пандемии коронавируса стали не только
+                        необходимостью, но и превратились
+                        в аксессуар, который помогает людям выглядеть модно в любой ситуации.
+                     </div>
+                  </a>
+               </div>
+               <div class="blog-item blog-item-2">
+                  <a href="blog.html" alt="Рейтинг экологичных тканей">
+                     <div>Январь</div>
+                     <div class="date">23</div>
+                     <h3>Рейтинг экологичных тканей</h3>
+                     <div class="text">Термин &laquo;экологичность&raquo; означает, что ткани безопасны для окружающей
+                        среды,
+                        перерабатываемы или биоразлагаемы. В это статье мы составили для вас их рейтинг на основе
+                        стандартов компании Refornation в выборе тканей.</div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <footer>
+      <div class="container">
+         <div class="text-box">
+            <h2>О проекте</h2>
+            <div class="text">Ecoshop &mdash; онлайн магазин экологичной одежды для женщин.
+               Мы верим, что мода может быть экологичной и знаем те бренды, производство которых не несёт вреда природе
+               или его минимизирует. </div>
+         </div>
+         <div class="social-media-links">
+            <a class="icon-twitter" href="https://twitter.com/"></a>
+            <a class="icon-facebook" href="https://www.facebook.com/"></a>
+            <a class="icon-instagram" href="https://www.instagram.com/"></a>
+            <a class="icon-youtube" href="https://www.youtube.com/"></a>
+            <a class="icon-mail" href="mailto:stacie.kot@gmail.com"></a>
+         </div>
+      </div>
+      <div class="subscription-block">
+         <div class="container">
+            <form class="subscription-form" method="post" action="subscription.php">
+               <h2>Рассылка</h2>
+               <div class="text">Подпишитесь на нашу рассылку и получите скидку 15% на вашу следующую покупку онлайн!
+               </div>
+               <div class="clearfix">
+                  <input type="email" name="email" required placeholder="Enter your email adress">
+                  <button type="submit">Send me</button>
+               </div>
+            </form>
+         </div>
+      </div>
+      <div class="footer-navigation">
+         <div class="container  clearfix">
+            <div class="footer-nav-container">
+               <div class="footer-contacts">
+                  <a><img src="img/logo-gray.png" alt="Логотип черно-белый"></a>
+                  <ul>
+                     <li><a class="icon-map" href="#"> Республика Беларусь, 220104, город Минск, <span>ул. Экологичная,
+                              дом 7, кабинет 333</span></a>
+                     </li>
+                     <li><a class="icon-phone" href="tel:+375445555555"> +375(44)5555555</a></li>
+                     <li><a class="icon-mail" href="mailto:stacie.kot@gmail.com"> ecoshop@gmail.com</a></li>
+                  </ul>
+               </div>
+               <div class="footer-menu">
+                  <h5>Инфо</h5>
+                  <ul>
+                     <li><a href="#">Контакты</a></li>
+                     <li><a href="#">Мой аккаунт</a></li>
+                     <li><a href="#">Помощь</a></li>
+                     <li><a href="#">Доставка</a></li>
+                     <li><a href="#">Оплата</a></li>
+                     <li><a href="#">Возврат</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer-menu">
+               <h5>О компании</h5>
+               <ul>
+                  <li><a href="#">Наша история</a></li>
+                  <li><a href="#">Преимущества</a></li>
+                  <li><a href="#">События</a></li>
+                  <li><a href="#">Экологичность</a></li>
+                  <li><a href="#">Карьера</a></li>
+                  <li><a href="#">Бренды</a></li>
+               </ul>
+            </div>
+            <div class="footer-menu">
+               <h5>Полезные ссылки</h5>
+               <ul>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Руководство по уходу</a></li>
+                  <li><a href="#">Популярные вопросы</a></li>
+                  <li><a href="#">Экологичные ткани</a></li>
+                  <li><a href="#">Подарочные сертификаты</a></li>
+                  <li><a href="#">Таблица размеров</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="container">
+            <div class="copyright">&copy 2021 Магазин экологичной моды Ecoshop</div>
+         </div>
+      </div>
+      </div>
+   </footer>
+
+
+</body>
+
+</html>

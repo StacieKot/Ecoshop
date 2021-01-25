@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "nullstyle.css";
+@import "icons-style.css";
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+body{
+	font-family: 'Playfair Display', serif;
+   color: #666666;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 20px;
+}
+
+/* .clearfix:after{ 
+    content:"."; 
+    visibility: hidden; 
+    display:block; 
+    height: 0; 
+    clear: both;
+}*/
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.text-box{
+	padding: 140px 0px 70px 0px;
+	text-align: center;
+}
+.text-box h2{
+   color: #2d3a4b;
+   font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.38em;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.text-box div{
+	max-width: 570px;
+	margin: 0px auto;	
+}
+
+.social-media-links{
+   text-align: center;
+   padding-bottom: 130px;
+}
+.social-media-links a{
+   display: inline-block;
+   color: #2d3a4b;
+   font-size:20px;
+   padding: 5px 10px;
+}
+.social-media-links a:hover{
+   color: #ffe115;
+}
+/* Форма для подписки на рассылку */
+.footer-subscription-block{
+   background-color: #131920;
+}
+.subscription-form{
+   max-width: 770px;
+   margin: 0px auto;;
+   text-align: center;
+   padding: 140px 0px;
+}
+.subscription-form>div:first-child {
+   color: #2d3a4b;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.38em;
+	font-weight: bold;
+   margin-bottom: 30px;
+   color: #ffffff;
+}
+.subscription-form>div:nth-child(2){
+   margin-bottom: 50px;
+} 
+.subscription{
+   overflow: hidden;
+}
+.subscription input[type=email]{
+   width: 61%;
+   height: 50px;
+   float: left;
+   padding-left: 15px;
+   margin-right: 30px;
+}
+
+.subscription-form input:invalid{
+   color:red;
+}
+.subscription button{
+   width: 35%;
+   height: 50px;
+   float: left;
+   font-size: 18px;
+	text-transform: uppercase;
+   font-weight: bold;
+   font-family: 'Montserrat', sans-serif;
+   color: #ffffff;
+   background-color: #131920;
+   border: solid 1px white;
+}
+.footer-nav-block{
+   background-color: #171e27;
+   padding: 140px 0px;
+   font-family: 'Montserrat', sans-serif;
+}
+.footer-contacts{
+   width: 34%;
+   float:left;
+}
+.footer-menu{
+   margin-left: 34%;
+}
+.footer-menu>div{
+   float: left;
+   width: 33.3%;
+}
+.footer-menu-title{
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: 0.14em;
+	text-transform: uppercase;
+   font-weight: bold;
+   color: #ffffff;
+   padding-bottom: 30px;
+}
+.footer-nav-block a{
+   display: block;
+   font-family: 'Montserrat', sans-serif;
+   color: #999999;
+   font-size: 12px;
+   line-height: 25px;
+   padding: 5px 0px;
+   text-transform: capitalize;
+}
+.footer-nav-block a:hover{
+   color: white;
+}
+.footer-contacts li{
+   margin-bottom: 35px;
+}
+.footer-contacts>a{
+   padding: 0;
+   margin-bottom: 20px
+}
+.footer-contacts span{
+   display: block;
+}
+.copyright{
+   text-align: center;
+   font-size: 10px;
+   padding-top:95px;
+}

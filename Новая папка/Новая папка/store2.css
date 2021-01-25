@@ -1,0 +1,460 @@
+.top-banner {
+  padding: 15% 0px 10% 0px;
+  background: url(../img/4.webp) no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-banner .title,
+.top-banner .text {
+  color: white;
+}
+
+.top-banner .text-box {
+  padding: 0px;
+}
+
+.top-banner .container {
+  padding-right: 50%;
+}
+
+@media only all and (min-width: 3000px) {
+  .top-banner {
+    background-image: url(../img/source/store/bg-4000.jpg);
+  }
+}
+
+@media only all and (max-width: 3000px) {
+  .top-banner {
+    background-image: url(../img/source/store/bg-image3000.jpg);
+  }
+}
+
+@media only all and (max-width: 2500px) {
+  .top-banner {
+    background-image: url(../img/source/store/bg-image2500.jpg);
+  }
+}
+
+@media only all and (max-width: 1920px) {
+  .top-banner {
+    background-image: url(../img/source/store/bg-image1920.jpg);
+  }
+}
+
+@media only all and (max-width: 1366px) {
+  .top-banner {
+    background-image: url(../img/source/store/bg-image1366.jpg);
+  }
+}
+
+@media only all and (max-width: 800px) {
+  .top-banner {
+    background-image: url(../img/source/store/bg-image800.jpg);
+  }
+}
+
+@media only all and (max-width: 415px) and (-webkit-max-device-pixel-ratio: 1), only all and (max-width: 415px) and (max-resolution: 1dppx) {
+  .top-banner {
+    background-image: url(../img/source/store/bg-image415.jpg);
+  }
+}
+
+.store-wrapper {
+  padding: 70px 0px 140px 0px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+aside {
+  width: 23%;
+  float: left;
+}
+
+aside input {
+  display: none;
+}
+
+aside input.check-filter:checked + label + .filter-list {
+  display: block;
+}
+
+aside > div {
+  margin-bottom: 30px;
+}
+
+aside .banner {
+  background: url(../img/source/store/aside-banner.jpg) no-repeat;
+  background-size: cover;
+  padding: 20% 30% 10% 5%;
+}
+
+aside .banner div {
+  font-size: 26px;
+  line-height: 35px;
+  color: white;
+}
+
+aside .filter-name::after {
+  position: absolute;
+  right: 0;
+  top: 25%;
+}
+
+.filter-name {
+  display: block;
+  padding-left: 14px;
+  position: relative;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.filter-name::after {
+  content: "\e90c";
+  font-family: "icomoon";
+  font-size: 10px;
+  color: #2d3a4b;
+}
+
+input.check-filter:checked + .filter-name::after {
+  content: "\e90e";
+}
+
+.filter-name::before {
+  content: "\e910";
+  font-family: "icomoon";
+  font-size: 6px;
+  color: #ffe115;
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+
+.filter-list {
+  display: none;
+  margin: 25px 0px 50px 0px;
+}
+
+.filter-list a {
+  display: block;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.filter-list a:hover, .filter-list a:active {
+  color: #ffe115;
+}
+
+.filter-list a span:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.filter-list a span:nth-child(1) {
+  margin-right: 20px;
+}
+
+.filter-list li {
+  line-height: 40px;
+  border-bottom: 1px solid #d1d5db;
+  padding-left: 14px;
+  position: relative;
+}
+
+.filter-list li::before {
+  content: "\e90d";
+  font-family: "icomoon";
+  font-size: 6px;
+  color: #2d3a4b;
+  position: absolute;
+  left: 0;
+}
+
+.filter-list li:last-child {
+  border-bottom: none;
+}
+
+.filter-list li:hover {
+  color: #ffe115;
+}
+
+.filter-list li:hover::before {
+  color: #ffe115;
+}
+
+.filter-list li input:checked ~ label {
+  color: #ffe115;
+}
+
+.filter-list li label {
+  display: block;
+}
+
+.filter-by-price > div {
+  width: 50%;
+  float: left;
+}
+
+.filter-by-price input[type="number"] {
+  display: inline-block;
+  border: 1px solid #d1d5db;
+  width: 60%;
+  margin: 0px 10px;
+  padding-left: 5px;
+  line-height: 30px;
+}
+
+.filter-by-price input[type="number"]:focus {
+  -webkit-box-shadow: 0 0 2px 1px #ffe115;
+          box-shadow: 0 0 2px 1px #ffe115;
+}
+
+.filter-by-price label {
+  font-weight: 600;
+}
+
+.filter-by-price .button {
+  width: 18ex;
+  float: right;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.filter-by-color {
+  padding-left: 14px;
+  padding-right: 60px;
+}
+
+.filter-by-color input {
+  display: none;
+}
+
+.filter-by-color input:checked + label {
+  -webkit-box-shadow: #ffe115 0px 0px 0px 2px;
+          box-shadow: #ffe115 0px 0px 0px 2px;
+}
+
+.size {
+  height: 160px;
+  overflow-y: scroll;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.aside-filters {
+  display: none;
+}
+
+.aside-filters::after {
+  content: "\e90c";
+  font-family: "icomoon";
+  font-size: 12px;
+}
+
+input[id="filters"] {
+  display: none;
+}
+
+.top-filters {
+  margin-left: calc(23% + 30px);
+  position: relative;
+}
+
+.top-filters .text {
+  float: left;
+}
+
+.top-filters input {
+  display: none;
+}
+
+.top-filters .view input:checked + label {
+  color: #ffe115;
+}
+
+.top-filters .filter-name {
+  font-size: 16px;
+  text-transform: none;
+  padding-left: 0px;
+}
+
+.top-filters .filter-name::before {
+  content: none;
+}
+
+.top-filters .filter-list {
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.top-filters > div:nth-child(2),
+.top-filters > div:nth-child(3) {
+  float: right;
+}
+
+.top-filters > div:nth-child(2) {
+  font-size: 20px;
+}
+
+.top-filters input.check-filter:checked + label + .filter-list {
+  display: block;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.top-filters .icon-view,
+.top-filters .icon-th-large {
+  margin-left: 30px;
+}
+
+main {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: violet 1px solid;
+}
+
+.product-cell {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc((100% - 90px) / 3);
+          flex: 0 1 calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-bottom: 70px;
+  background-color: yellow;
+}
+
+.product-cell h3 {
+  text-align: center;
+}
+
+.product-cell .img-container {
+  position: relative;
+  padding-bottom: 130%;
+}
+
+@media only all and (max-width: 860px) {
+  aside {
+    display: none;
+    padding: 10px 20px;
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  aside > div {
+    padding: 20px 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid rgba(45, 58, 75, 0.5);
+  }
+  aside > div:nth-child(6) {
+    border-bottom: none;
+  }
+  aside .banner {
+    display: none;
+  }
+  aside .filter-name {
+    padding-left: 0px;
+  }
+  aside .filter-name::after {
+    right: 5px;
+  }
+  aside .filter-name::before {
+    content: none;
+  }
+  aside .filter-list {
+    margin-bottom: 0px;
+  }
+  .top-filters {
+    margin-left: 0px;
+  }
+  .top-filters > .text {
+    display: none;
+  }
+  .aside-filters {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    top: 16px;
+  }
+  input[id="filters"]:checked + label + aside {
+    display: block;
+    position: absolute;
+    top: 80px;
+    z-index: 2;
+    width: calc(100% - 20px);
+  }
+  input[id="filters"]:checked + label::after {
+    content: "\e90e";
+  }
+  .product-cell {
+    margin-bottom: 50px;
+  }
+  .product-cell:nth-child(3n + 1) {
+    margin-left: 0px;
+  }
+  .store-wrapper {
+    padding: 35px 0px 70px 0px;
+    position: relative;
+  }
+}
+
+@media only all and (max-width: 600px) {
+  .product-cell {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+  .product-cell:nth-child(odd) {
+    margin-left: 0px;
+  }
+  .product-cell:nth-child(even) {
+    margin-left: 30px;
+  }
+}
+
+@media only all and (max-width: 460px) {
+  .aside-filters {
+    top: 0px;
+  }
+  .top-filters > div:nth-child(3) {
+    float: left;
+    padding-top: 10px;
+  }
+  .top-filters .icon-view,
+  .top-filters .icon-th-large {
+    margin-left: 10px;
+  }
+}
+
+.pagination {
+  margin-left: calc(23% + 30px);
+}
+
+.pagination div:first-child {
+  float: right;
+}
+
+.pagination div:first-child li {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.pagination div:first-child li a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #2d3a4b;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.pagination div:first-child li a:target {
+  background-color: #ffe115;
+}

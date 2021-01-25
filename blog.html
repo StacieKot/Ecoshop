@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+      content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+   <title></title>
+   <link href="css/style.css" rel="stylesheet" type="text/css">
+   <link href="css/blog.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+   <header>
+      <div class="container top-header">
+         <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
+         </div>
+         <nav class="navigation">
+            <input type="checkbox" name="menu" id="menu">
+            <label for="menu" class="menu-label">
+               <span></span>
+               <span></span>
+               <span></span>
+            </label>
+            <ul class="menu">
+               <li>
+                  <input type="checkbox" name="submenu" id="submenu1">
+                  <label for="submenu1" class="submenu-label">Продукция</label>
+                  <a href="store.html">Продукция</a>
+                  <ul class="submenu">
+                     <li><a href="store.html">Пальто и куртки</a></li>
+                     <li><a href="store.html">Джемперы и кардиганы</a></li>
+                     <li><a href="store.html">Свитшоты и худи</a></li>
+                     <li><a href="store.html">Спортивная одежда</a></li>
+                     <li><a href="store.html">Платья</a></li>
+                     <li><a href="store.html">Футболки и топы</a></li>
+                     <li><a href="store.html">Джинсы и деним</a></li>
+                     <li><a href="store.html">Брюки</a></li>
+                     <li><a href="store.html">Обувь</a></li>
+                  </ul>
+               </li>
+               <li class="submenu-container">
+                  <input type="checkbox" name="submenu" id="submenu2">
+                  <label for="submenu2" class="submenu-label">О проекте</label>
+                  <a href="index.html">О проекте</a>
+                  <ul class="submenu">
+                     <li><a href="index.html">Наша история</a></li>
+                     <li><a href="index.html">Экологичность</a></li>
+                     <li><a href="index.html">Команда</a></li>
+                     <li><a href="index.html">Карьера</a></li>
+                     <li><a href="index.html">Бренды</a></li>
+                  </ul>
+               </li>
+               <li><a href="blog.html">Блог</a></li>
+               <li><a href="#">Контакты</a></li>
+            </ul>
+         </nav>
+         <div class="nav-icon">
+            <div class="icon-user" onclick="">
+               <div class="popup login">
+                  <a href="#" title="Войти через">Войти через</a>
+                  <ul class="social-media-links">
+                     <li><a class="icon-twitter" href="https://twitter.com/" target="_blank"></a></li>
+                     <li><a class="icon-facebook" href="https://www.facebook.com/" target="_blank"></a></li>
+                     <li><a class="icon-instagram" href="https://www.instagram.com/" target="_blank"></a></li>
+                     <li><a class="icon-youtube" href="https://www.youtube.com/" target="_blank"></a></li>
+                     <li><a class="icon-mail" href="mailto:stacie.kot@gmail.com" target="_blank"></a></li>
+                  </ul>
+                  <form method="GET" action="login">
+                     <input type="text" name="user-name" placeholder="Имя пользователя">
+                     <input type="password" name="password" placeholder="Пароль">
+                     <a href="#" title="Восстановление пароля">Забыли пароль?</a>
+                     <button class="button" type="submit">Вход</button>
+                  </form>
+               </div>
+            </div>
+            <div class="icon-cart" onclick=""><span>2</span>
+               <div class="popup cart">
+                  <div class="row-cart">
+                     <div class="item-img">
+                        <img src="img/3.webp" alt="" title="">
+                     </div>
+                     <div class="item-info">
+                        <div>Платье</div>
+                        <div class="text">Вечернее платье</div>
+                     </div>
+                     <div class="item-result">
+                        <div>1</div>
+                        <div>150р.</div>
+                        <button type="submit">&#10006;</button>
+                     </div>
+                  </div>
+                  <div class="row-cart">
+                     <div class="item-img">
+                        <img src="img/2.webp" alt="" title="">
+                     </div>
+                     <div class="item-info">
+                        <div>Топ</div>
+                        <div class="text">Спортивный топ</div>
+                     </div>
+                     <div class="item-result">
+                        <div>1</div>
+                        <div>150р.</div>
+                        <button type="submit">&#10006;</button>
+                     </div>
+                  </div>
+                  <div class="sum clearfix">
+                     <div>Сумма</div>
+                     <div>320р.</div>
+                  </div>
+                  <a href="cart.html" class="button">Перейти в корзину</a>
+               </div>
+            </div>
+            <div class="icon-search" onclick="">
+               <div class="popup search-form">
+                  <form method="GET" action="search">
+                     <input type="search" name="search" placeholder="Поиск">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="top-banner">
+         <div class="container">
+            <h1>Платья из новых коллекций</h1>
+            <a href="store.html" class="button">К покупкам</a>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <div class="container">
+         <article>
+            <h4><span>Одежда</span></h4>
+            <h2>10 покупок этого лета</h2>
+            <div class="img-container">
+               <picture>
+                  <source srcset="img/2.webp" type="image/webp">
+                  <img src="img/1.jpg" alt="" title="">
+               </picture>
+            </div>
+            <div class="blog-content">
+               <div>
+                  <div>Февраль</div>
+                  <div class="date">02</div>
+                  <div><span class="icon-comment-o"> </span>08</div>
+               </div>
+               <div>
+                  <p class="text">Хотите быть этим летом стильными и экологичными? Мы составили список главных покупок
+                     летнего сезона. Всё, как мы любим: экобренды превратили переработанные материалы (пластик, хлопок,
+                     бумагу и даже картофель!) в незаменимые этим летом предметы одежды и аксессуаров.</p>
+                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, voluptatem, culpa
+                     aut sequi praesentium vero, at perspiciatis ullam laboriosam quas aspernatur? Sed fugiat nesciunt
+                     quis iusto suscipit perferendis repellendus ratione.</p>
+                  <a class="button" href="#" alt="Весенние тренды">Читать далее</a>
+               </div>
+            </div>
+         </article>
+         <article>
+            <h4><span>Одежда</span></h4>
+            <h2>10 покупок этого лета</h2>
+            <div class="img-container">
+               <picture>
+                  <source srcset="img/2.webp" type="image/webp">
+                  <img src="img/1.jpg" alt="" title="">
+               </picture>
+            </div>
+            <div class="blog-content">
+               <div>
+                  <div>Февраль</div>
+                  <div class="date">02</div>
+                  <div><span class="icon-comment-o"> </span>08</div>
+               </div>
+               <div>
+                  <p class="text">Хотите быть этим летом стильными и экологичными? Мы составили список главных покупок
+                     летнего сезона. Всё, как мы любим: экобренды превратили переработанные материалы (пластик, хлопок,
+                     бумагу и даже картофель!) в незаменимые этим летом предметы одежды и аксессуаров.</p>
+                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, voluptatem, culpa
+                     aut sequi praesentium vero, at perspiciatis ullam laboriosam quas aspernatur? Sed fugiat nesciunt
+                     quis iusto suscipit perferendis repellendus ratione.</p>
+                  <a class="button" href="#" alt="Весенние тренды">Читать далее</a>
+               </div>
+            </div>
+         </article>
+         <article>
+            <h4><span>Одежда</span></h4>
+            <h2>10 покупок этого лета</h2>
+            <div class="img-container">
+               <picture>
+                  <source srcset="img/2.webp" type="image/webp">
+                  <img src="img/1.jpg" alt="" title="">
+               </picture>
+            </div>
+            <div class="blog-content">
+               <div>
+                  <div>Февраль</div>
+                  <div class="date">02</div>
+                  <div><span class="icon-comment-o"> </span>08</div>
+               </div>
+               <div>
+                  <p class="text">Хотите быть этим летом стильными и экологичными? Мы составили список главных покупок
+                     летнего сезона. Всё, как мы любим: экобренды превратили переработанные материалы (пластик, хлопок,
+                     бумагу и даже картофель!) в незаменимые этим летом предметы одежды и аксессуаров.</p>
+                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, voluptatem, culpa
+                     aut sequi praesentium vero, at perspiciatis ullam laboriosam quas aspernatur? Sed fugiat nesciunt
+                     quis iusto suscipit perferendis repellendus ratione.</p>
+                  <a class="button" href="#" alt="Весенние тренды">Читать далее</a>
+               </div>
+            </div>
+         </article>
+      </div>
+   </main>
+   <footer>
+      <div class="container">
+         <div class="text-box">
+            <h2>О проекте</h2>
+            <div class="text">Ecoshop &mdash; онлайн магазин экологичной одежды для женщин.
+               Мы верим, что мода может быть экологичной и знаем те бренды, производство которых не несёт вреда природе
+               или его минимизирует. </div>
+         </div>
+         <div class="social-media-links">
+            <a class="icon-twitter" href="https://twitter.com/"></a>
+            <a class="icon-facebook" href="https://www.facebook.com/"></a>
+            <a class="icon-instagram" href="https://www.instagram.com/"></a>
+            <a class="icon-youtube" href="https://www.youtube.com/"></a>
+            <a class="icon-mail" href="mailto:stacie.kot@gmail.com"></a>
+         </div>
+      </div>
+      <div class="subscription-block">
+         <div class="container">
+            <form class="subscription-form" method="post" action="subscription.php">
+               <h2>Рассылка</h2>
+               <div class="text">Подпишитесь на нашу рассылку и получите скидку 15% на вашу следующую покупку онлайн!
+               </div>
+               <div class="clearfix">
+                  <input type="email" name="email" required placeholder="Enter your email adress">
+                  <button type="submit">Send me</button>
+               </div>
+            </form>
+         </div>
+      </div>
+      <div class="footer-navigation">
+         <div class="container  clearfix">
+            <div class="footer-nav-container">
+               <div class="footer-contacts">
+                  <a><img src="img/logo-gray.png" alt="Логотип черно-белый"></a>
+                  <ul>
+                     <li><a class="icon-map" href="#"> Республика Беларусь, 220104, город Минск, <span>ул. Экологичная,
+                              дом 7, кабинет 333</span></a>
+                     </li>
+                     <li><a class="icon-phone" href="tel:+375445555555"> +375(44)5555555</a></li>
+                     <li><a class="icon-mail" href="mailto:stacie.kot@gmail.com"> ecoshop@gmail.com</a></li>
+                  </ul>
+               </div>
+               <div class="footer-menu">
+                  <h5>Инфо</h5>
+                  <ul>
+                     <li><a href="#">Контакты</a></li>
+                     <li><a href="#">Мой аккаунт</a></li>
+                     <li><a href="#">Помощь</a></li>
+                     <li><a href="#">Доставка</a></li>
+                     <li><a href="#">Оплата</a></li>
+                     <li><a href="#">Возврат</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer-menu">
+               <h5>О компании</h5>
+               <ul>
+                  <li><a href="#">Наша история</a></li>
+                  <li><a href="#">Преимущества</a></li>
+                  <li><a href="#">События</a></li>
+                  <li><a href="#">Экологичность</a></li>
+                  <li><a href="#">Карьера</a></li>
+                  <li><a href="#">Бренды</a></li>
+               </ul>
+            </div>
+            <div class="footer-menu">
+               <h5>Полезные ссылки</h5>
+               <ul>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Руководство по уходу</a></li>
+                  <li><a href="#">Популярные вопросы</a></li>
+                  <li><a href="#">Экологичные ткани</a></li>
+                  <li><a href="#">Подарочные сертификаты</a></li>
+                  <li><a href="#">Таблица размеров</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="container">
+            <div class="copyright">&copy; 2021 Магазин экологичной моды Ecoshop</div>
+         </div>
+      </div>
+   </footer>
+</body>

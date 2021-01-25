@@ -1,0 +1,125 @@
+$maincolor: #ffe115;
+$text-maincolor: #2d3a4b;
+$text-color: #666666;
+$border-color: #d1d5db;
+.top-banner {
+   background: url(../img/4.webp) no-repeat;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 15% 0px 10% 0px;
+   .container {
+      padding-right: 50%;
+   }
+}
+@media only all and (min-width: 3000px) {
+   .top-banner {
+      background-image: url(../img/source/store/bg-4000.jpg);
+   }
+}
+@media only all and (max-width: 3000px) {
+   .top-banner {
+      background-image: url(../img/source/store/bg-image3000.jpg);
+   }
+}
+@media only all and (max-width: 2500px) {
+   .top-banner {
+      background-image: url(../img/source/store/bg-image2500.jpg);
+   }
+}
+@media only all and (max-width: 1920px) {
+   .top-banner {
+      background-image: url(../img/source/store/bg-image1920.jpg);
+   }
+}
+@media only all and (max-width: 1366px) {
+   .top-banner {
+      background-image: url(../img/source/store/bg-image1366.jpg);
+   }
+}
+@media only all and (max-width: 800px) {
+   .top-banner {
+      background-image: url(../img/source/store/bg-image800.jpg);
+   }
+}
+@media only all and (max-width: 415px) and (max-resolution: 1dppx) {
+   .top-banner {
+      background-image: url(../img/source/store/bg-image415.jpg);
+   }
+}
+p {
+   margin-bottom: 30px;
+}
+article {
+   padding: 140px 0px;
+   border-bottom: $border-color 1px solid;
+   h2 {
+      padding: 40px 0px;
+   }
+   h4 {
+      text-align: center;
+      span {
+         padding: 0px 10px;
+         background: url(../img/menu-hover-bg.png) left 50% repeat-x;
+      }
+   }
+   .img-container {
+      position: relative;
+      padding-bottom: 43%;
+   }
+   .blog-content {
+      display: flex;
+      margin-top: 70px;
+      > div:first-child {
+         flex: 0 0 170px;
+         padding-right: 10px;
+      }
+      > div:nth-child(2) {
+         flex: 1 1 0px;
+         padding-right: 10%;
+      }
+      span {
+         color: $maincolor;
+      }
+      .text {
+         text-align: left;
+      }
+      .button {
+         width: 210px;
+         margin: 60px auto 0px auto;
+      }
+   }
+}
+@media only all and (max-width: 700px) {
+   article {
+      padding: 70px 0px;
+      .blog-content {
+         > div:first-child {
+            flex: 0 0 auto;
+         }
+         > div:nth-child(2) {
+            padding-right: 0px;
+            p {
+               text-align: justify;
+            }
+         }
+      }
+   }
+}
+@media only all and (max-width: 370px) {
+   article {
+      .blog-content {
+         .button {
+            width: 100%;
+         }
+         > div:first-child {
+            .date {
+               font-size: 50px;
+               margin-bottom: 0px;
+            }
+         }
+         p {
+            margin-bottom: 10px;
+         }
+      }
+   }
+}

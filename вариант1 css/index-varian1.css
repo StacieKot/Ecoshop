@@ -1,0 +1,162 @@
+.main-slider{
+	height: 860px;
+	background-color: #ffe115;
+}
+/* Блок с популярными товарами */
+.new-arrival-row>div{ /* Использовала*/
+	width: 25%;
+	padding-bottom: calc( 25% * 1.085 ) ;
+	border: 1px solid #d1d5db;
+   float: left;
+   position: relative;
+}	
+.new-arrival-row>div>div{   /* Использовала*/
+   left: 0; 
+   right: 0; 
+}
+.new-arrival-row>div>div:nth-child(2){ /* Использовала*/
+   top: 70%;
+}
+.new-arrival-row>div>div:nth-child(3){ /* Использовала*/
+   top: 85%;
+}
+.new-arrival-row span{  /* Использовала*/
+   display: block;
+   text-align: center;
+}
+.new-arrival-row .text, .new-arrival-row .cell-title{  /* Использовала*/
+   color:white;
+}
+
+.new-arrival-row>div a{ /* Использовала*/
+   display: block;
+   position: absolute;
+   left: 0;
+   height: 100%;
+   width: 100%;
+}
+.new-arrival-row img{  /* Использовала*/
+   width:100%;
+   height:100%;
+   object-fit: cover;
+}
+/* Слайдер для популярных товаров */
+
+.pp-slide .product-cell, .pp-slide1 .product-cell{
+   float: left;
+   border: tomato solid 1px; /*Удалить*/
+   width: calc(  100% / 4 ); 
+   padding-bottom: calc(  100% / 4 * 1.85 );
+}
+
+.popular-products{
+   position: relative;
+   right: 0;
+   padding-bottom: calc(  100% / 4 * 1.85 );
+   overflow: hidden;
+   border: 2px solid yellow;
+}
+.pp-slide1{
+   position: absolute;
+   left: 0px; /* Иначе контейнер не занимает 100% ширины)*/
+   right: 0px;
+}
+.pp-slide{
+   position: absolute;
+   left: 100%;
+   right: -100%;
+}
+@keyframes slider-popular-products-1{
+   from{transform: translate(0,0);}
+   2.5%{transform: translate(0,0);}
+   5%{transform: translate(-25%,0)}
+   7.5%{transform: translate(-25%,0)}
+   10%{transform: translate(-50%,0)}
+   12.5%{transform: translate(-50%,0)}
+   15%{transform: translate(-75%,0)}
+   17.5%{transform: translate(-75%,0)}
+   20%{transform: translate( -100%,0); visibility: visible;}
+   22.5%{transform: translate( -100%,0); visibility: hidden;}
+   25%{transform: translate(100%,0);visibility: hidden;}
+   82.5%{transform: translate(100%,0); visibility: visible;}
+   85%{transform: translate( 75% ,0)}
+   87.5%{transform: translate( 75% ,0)}
+   90%{transform: translate( 50% ,0)}
+   92.5%{transform: translate( 50% ,0)}
+   95%{transform: translate( 25% ,0)}
+   97.5%{transform: translate( 25% ,0)}
+   to{transform: translate(0,0)}
+}
+@keyframes slider-popular-products-2{ 
+   from{transform: translate(0,0);}
+   2.5%{transform: translate(0,0);}
+   5%{transform: translate(-25%,0)}
+   7.5%{transform: translate(-25%,0)}
+   10%{transform: translate(-50%,0)}
+   12.5%{transform: translate(-50%,0)}
+   15%{transform: translate(-75%,0)}
+   17.5%{transform: translate(-75%,0)}
+   20%{transform: translate( -100%,0)}
+   22.5%{transform: translate(-100%,0)}
+   25%{transform: translate(-125%,0)}
+   27.5%{transform: translate(-125%,0)}
+   30%{transform: translate(-150%,0)}
+   32.5%{transform: translate(-150%,0)}
+   35%{transform: translate(-175%,0)}
+   37.5%{transform: translate(-175%,0)}
+   40%{transform: translate(-200%,0); visibility: visible;}
+   42.5%{transform: translate(-200%,0); visibility: hidden;}
+   45%{transform: translate(0,0); visibility: hidden;}
+   to{transform: translate(0,0)}
+}
+  
+.pp-slide1{
+   animation: slider-popular-products-1 80s linear infinite;
+}
+.pp-slide{ 
+   animation: slider-popular-products-2 80s linear infinite;
+}
+.pp-slide3{ 
+   animation-delay: 16s;
+}
+.pp-slide4{ 
+   animation-delay: 32s;
+}
+.pp-slide5{ 
+   animation-delay: 48s;
+}
+
+.bottom-slider{
+	height: 1020px;
+	background-color: rgb(142, 226, 212);
+}
+/* Речь от основателя */
+.quot-box{
+	border-bottom: 1px solid #d1d5db;
+}
+.quot-box-text, .quot-box-picture{
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	border: red solid 1px;
+}
+.quot-box-text{
+	text-align: right;
+	padding: 14.5% 0px 14.5% 8.5%; 
+}
+.quot-box-text div{
+	border:green 1px solid;     /*Потом удалить*/
+}
+.quot-box-text div:first-child{
+	color: #ffe115;
+	font-size: 80px;
+	letter-spacing: 0.2em;
+	  /*Тут еще подумать, как уменьшить нижний отступ у кавычек*/
+}
+.quot-box-text div:nth-child(2){
+	margin-bottom: 40px;
+}
+.quot-box-text div:last-child{
+   font-size: 18px;
+	text-transform: uppercase;
+}

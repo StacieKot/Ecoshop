@@ -1,0 +1,267 @@
+$maincolor: #ffe115;
+$text-maincolor: #2d3a4b;
+$text-color: #666666;
+$border-color: #d1d5db;
+.top-banner {
+   background: url(../img/4.webp) no-repeat;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 10% 0px;
+   .container {
+      padding-right: 45%;
+   }
+}
+@media only all and (min-width: 3000px) {
+   .top-banner {
+      background-image: url(../img/source/products/bg-4000.jpg);
+   }
+}
+@media only all and (max-width: 3000px) {
+   .top-banner {
+      background-image: url(../img/source/products/bg-image3000.jpg);
+   }
+}
+@media only all and (max-width: 2500px) {
+   .top-banner {
+      background-image: url(../img/source/products/bg-image2500.jpg);
+   }
+}
+@media only all and (max-width: 1920px) {
+   .top-banner {
+      background-image: url(../img/source/products/bg-image1920.jpg);
+   }
+}
+@media only all and (max-width: 1366px) {
+   .top-banner {
+      background-image: url(../img/source/products/bg-image1366.jpg);
+   }
+}
+@media only all and (max-width: 800px) {
+   .top-banner {
+      background-image: url(../img/source/products/bg-image800.jpg);
+   }
+}
+@media only all and (max-width: 415px) and (max-resolution: 1dppx) {
+   .top-banner {
+      background-image: url(../img/source/products/bg-image415.jpg);
+   }
+}
+main {
+   margin-top: 140px;
+}
+.shopping-cart-title {
+   display: flex;
+   font-size: 12px;
+   text-transform: uppercase;
+   font-weight: 600;
+   margin-top: 70px;
+   padding-bottom: 10px;
+   > div:first-child {
+      flex: 1 1 500px;
+   }
+   > div:last-child {
+      flex: 1 1 270px;
+   }
+   > div:nth-child(2),
+   > div:nth-child(3) {
+      flex: 1 1 200px;
+   }
+}
+@media only all and (max-width: 600px) {
+   .shopping-cart-title {
+      > div:first-child {
+         flex: 0 0 30%;
+      }
+      > div:nth-child(2) {
+         flex: 0 0 15%;
+      }
+      > div:nth-child(3) {
+         flex: 0 0 30%;
+      }
+      > div:last-child(4) {
+         flex: 0 0 25%;
+      }
+   }
+}
+.shopping-cart-item {
+   display: flex;
+   align-items: center;
+   border-top: 1px solid $border-color;
+   padding: 30px 0px;
+   > div {
+      flex: 1 1 200px;
+   }
+   .description-block {
+      flex: 1 1 300px;
+      padding-right: 10px;
+   }
+   .delete-item {
+      flex: 1 1 70px;
+      button {
+         background-color: transparent;
+         font-size: 16px;
+      }
+   }
+   .img-block {
+      padding-right: 30px;
+      .img-container {
+         padding-bottom: 100%;
+         position: relative;
+      }
+   }
+   .text {
+      text-align: left;
+      padding-top: 5px;
+   }
+   select {
+      padding: 5px 15px;
+      border: $text-maincolor 1px solid;
+   }
+}
+@media only all and (max-width: 600px) {
+   .shopping-cart-item {
+      flex-wrap: wrap;
+      > div {
+         &:nth-child(3) {
+            flex: 0 0 15%;
+            order: 2;
+         }
+         &:nth-child(5) {
+            flex: 0 0 15%;
+            order: 4;
+         }
+         &:nth-child(4) {
+            flex: 0 0 30%;
+            order: 3;
+         }
+         &:nth-child(6) {
+            flex: 0 0 10%;
+            order: 5;
+         }
+      }
+      .img-block {
+         order: 1;
+         flex: 0 0 30%;
+         padding-right: 15px;
+      }
+      .description-block {
+         flex: 0 0 100%;
+         order: 6;
+         margin-top: 10px;
+      }
+   }
+}
+.preliminary-check {
+   display: flex;
+   > div {
+      &:first-child {
+         flex: 1 1 700px;
+      }
+      &:last-child {
+         flex: 1 1 400px;
+         margin-left: 70px;
+         .button {
+            background-color: $maincolor;
+            &:hover {
+               color: $text-maincolor;
+            }
+         }
+      }
+   }
+}
+.coupon {
+   background-color: #eeeeee;
+   padding: 45px;
+   margin: 25px 0px 30px 0px;
+   form {
+      display: flex;
+      input {
+         flex: 1 1 380px;
+      }
+      button {
+         flex: 1 1 180px;
+         margin-top: 0px;
+      }
+   }
+}
+@media only all and (max-width: 450px) {
+   .coupon {
+      form {
+         flex-direction: column;
+         align-items: stretch;
+         input {
+            flex-basis: 46px;
+            margin-right: 0px;
+         }
+         button {
+            flex-basis: auto;
+            margin-top: 30px;
+         }
+      }
+   }
+}
+.btn {
+   background-color: #eeeeee;
+   font-weight: bold;
+   text-transform: uppercase;
+   padding: 15px 30px;
+   color: $text-maincolor;
+   margin-right: 30px;
+   display: inline-block;
+   margin-top: 20px;
+   cursor: pointer;
+   &:hover {
+      background-color: $maincolor;
+   }
+}
+
+@media only all and (max-width: 700px) {
+   main {
+      margin: 70px 0px;
+   }
+   .preliminary-check {
+      flex-wrap: wrap;
+      > div {
+         &:first-child {
+            flex: 0 0 100%;
+         }
+         &:last-child {
+            flex: 0 0 100%;
+            margin-top: 70px;
+            margin-left: 0px;
+            .button {
+               width: 60%;
+               margin: 20px auto 0px auto;
+            }
+         }
+      }
+      h3 {
+         text-align: center;
+      }
+   }
+   .btn {
+      display: block;
+      margin: 20px auto 0px auto;
+      text-align: center;
+      width: 60%;
+   }
+}
+.check {
+   background-color: white;
+   border: $maincolor 3px solid;
+   padding: 9px 27px;
+   margin: 25px 0px 50px 0px;
+   > div {
+      text-transform: uppercase;
+      padding: 12px 0px;
+      &:nth-child(1),
+      &:nth-child(2) {
+         font-weight: 600;
+         border-bottom: $border-color 1px solid;
+         font-size: 12px;
+      }
+   }
+   span {
+      float: right;
+   }
+}
