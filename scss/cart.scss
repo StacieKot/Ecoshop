@@ -6,8 +6,8 @@ $border-color: #d1d5db;
    background: url(../img/4.webp) no-repeat;
    background-repeat: no-repeat;
    background-size: cover;
-   padding: 10% 0px;
-   .container {
+   padding: 12% 0px;
+   h1 {
       padding-right: 45%;
    }
 }
@@ -47,7 +47,10 @@ $border-color: #d1d5db;
    }
 }
 main {
-   margin-top: 140px;
+   margin-top: 70px;
+}
+.wrapper {
+   margin-top: 40px;
 }
 .shopping-cart-title {
    display: flex;
@@ -209,7 +212,6 @@ main {
    margin-right: 30px;
    display: inline-block;
    margin-top: 20px;
-   cursor: pointer;
    &:hover {
       background-color: $maincolor;
    }
@@ -217,7 +219,7 @@ main {
 
 @media only all and (max-width: 700px) {
    main {
-      margin: 70px 0px;
+      margin: 35px 0px;
    }
    .preliminary-check {
       flex-wrap: wrap;

@@ -2,10 +2,10 @@
   background: url(../img/4.webp) no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 15% 0px 10% 0px;
+  padding: 15% 0px 12% 0px;
 }
 
-.top-banner .container {
+.top-banner h1 {
   padding-right: 50%;
 }
 
@@ -70,7 +70,7 @@ aside input.check-filter:checked + label + .filter-list {
 }
 
 aside > div {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 aside .banner {
@@ -85,9 +85,18 @@ aside .banner div {
   color: white;
 }
 
+aside .filter-name {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+aside .filter-name:hover {
+  background-color: #ffe115;
+}
+
 aside .filter-name::after {
   position: absolute;
-  right: 0;
+  right: 1px;
   top: 25%;
 }
 
@@ -116,7 +125,7 @@ input.check-filter:checked + .filter-name::after {
   font-size: 6px;
   color: #ffe115;
   position: absolute;
-  left: 0;
+  left: 1px;
   top: 30%;
 }
 
@@ -179,6 +188,14 @@ input.check-filter:checked + .filter-name::after {
 
 .filter-list li label {
   display: block;
+}
+
+.filter-list li.active::before {
+  color: #ffe115;
+}
+
+.filter-list li.active a {
+  color: #ffe115;
 }
 
 .filter-by-price > div {
@@ -426,7 +443,7 @@ main {
 
 @media only all and (max-width: 460px) {
   .aside-filters {
-    top: 0px;
+    top: -3px;
   }
   .top-filters {
     -webkit-box-align: end;
