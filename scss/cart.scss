@@ -214,6 +214,7 @@ main {
    margin-top: 20px;
    &:hover {
       background-color: $maincolor;
+      transition-duration: 1s;
    }
 }
 

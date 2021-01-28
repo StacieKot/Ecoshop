@@ -1250,14 +1250,20 @@ footer .footer-navigation a:hover {
 
 .breadcrumb li:hover {
   background-color: #ffe115;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .breadcrumb li:hover:hover::before {
   border-color: #ffe115 white;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .breadcrumb li:hover:hover::after {
   border-color: white #ffe115;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .breadcrumb li a {

@@ -1044,11 +1044,14 @@ footer {
       }
       &:hover {
          background-color: $maincolor;
+         transition-duration: 1s;
          &:hover::before {
             border-color: $maincolor white;
+            transition-duration: 1s;
          }
          &:hover::after {
             border-color: white $maincolor;
+            transition-duration: 1s;
          }
       }
       a {
