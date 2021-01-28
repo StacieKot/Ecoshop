@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Playfair+Display&display=swap");
 @import url("nullstyle.css");
 @import url("icons-style.css");
 
@@ -101,7 +99,7 @@ h6 {
 @media only all and (max-width: 600px) {
    h1 {
       font-size: 24px;
-      line-height: normal;
+      line-height: 30px;
       letter-spacing: normal;
    }
 }
@@ -362,6 +360,11 @@ header {
    .button {
       width: 200px;
       margin-top: 50px;
+      background-color: rgba(45, 58, 75, 0.7);
+      border-radius: 30px;
+   }
+   .buttons-list {
+      margin-top: 50px;
    }
 }
 @media only all and (max-width: 240px) {
@@ -382,9 +385,53 @@ header {
       .button {
          margin-top: 20px;
       }
+      .buttons-list {
+         margin-top: 20px;
+      }
    }
 }
-
+.buttons-list {
+   display: inline-block;
+   background-color: rgba(45, 58, 75, 0.7);
+   border-radius: 30px;
+   ul {
+      padding: 10px;
+      display: block;
+      li {
+         display: inline-block;
+         border-right: white 1px solid;
+         &:last-child {
+            border-right: none;
+         }
+         a {
+            color: white;
+            text-transform: uppercase;
+            font-weight: normal;
+            letter-spacing: 0.3em;
+            font-size: 12px;
+            padding: 5px 15px;
+            display: inline-block;
+            &:hover {
+               color: $maincolor;
+            }
+         }
+      }
+   }
+}
+@media only all and (max-width: 600px) {
+   .buttons-list {
+      ul {
+         padding: 5px;
+         li {
+            a {
+               letter-spacing: 0.24em;
+               font-size: 10px;
+               padding: 5px 10px;
+            }
+         }
+      }
+   }
+}
 /* Кнопка */
 .button {
    width: 100%;
@@ -409,6 +456,27 @@ a.button {
    border: solid 2px #ffe115;
    background-color: white;
    display: none;
+   &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 5px 0px;
+      background-color: $maincolor;
+      transform: rotate(45deg);
+      top: -9px;
+   }
+   &::after {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      border-radius: 4px 0px;
+      background-color: white;
+      transform: rotate(45deg);
+      top: -6px;
+   }
+
    input {
       width: 100%;
       border: 1px solid #d1d5db;
@@ -418,6 +486,39 @@ a.button {
          font-size: 12px;
          text-transform: uppercase;
          color: #d1d5db;
+      }
+   }
+}
+
+.icon-cart {
+   .popup {
+      &::before {
+         right: 30px;
+      }
+      &::after {
+         right: 31px;
+      }
+   }
+}
+.icon-user {
+   .popup {
+      &::before {
+         right: 51px;
+      }
+      &::after {
+         right: 52px;
+      }
+   }
+}
+.icon-search {
+   .popup {
+      &::before {
+         right: 2px;
+         top: -10px;
+      }
+      &::after {
+         right: 3px;
+         top: -7px;
       }
    }
 }
@@ -436,7 +537,7 @@ a.button {
 
 .login {
    width: 295px;
-   right: 0;
+   right: -40px;
    top: 80%;
    padding: 25px;
    > a,
@@ -465,18 +566,18 @@ a.button {
 /* Появляющаяся корзина */
 .cart {
    width: 310px;
-   right: 0;
+   right: -20px;
    top: 80%;
    padding: 15px;
    .row-cart {
       border-bottom: 1px solid #f1f2f4;
       padding: 15px 0px;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
 
       .item-img {
          flex: 0 0 60px;
-         height: 60px;
+         height: 70px;
          img {
             width: 100%;
             height: 100%;
@@ -484,9 +585,9 @@ a.button {
          }
       }
       .item-info {
-         flex: 5 1 0px;
+         flex: 1 1 0px;
          font-size: 12px;
-         padding: 0px 15px;
+         padding: 0px 10px;
          & div:first-child {
             text-transform: uppercase;
             font-weight: bold;
@@ -494,12 +595,12 @@ a.button {
          }
       }
       .item-result {
-         flex: 4 1 0px;
+         flex: 1 1 0px;
          font-size: 14px;
          font-weight: bold;
          div {
             display: inline-block;
-            padding: 2px;
+            padding: 3px;
             &:first-child {
                border: solid 1px #2d3a4b;
             }
@@ -809,7 +910,13 @@ footer {
          float: left;
          padding-right: 5%;
          > a {
-            padding: 0px 0px 30px 0px;
+            padding: 0px 0px 20px 0px;
+         }
+         li {
+            margin-bottom: 25px;
+         }
+         span {
+            display: inline-block;
          }
       }
       .footer-menu {
@@ -834,13 +941,7 @@ footer {
       }
    }
 }
-.footer-contacts li {
-   margin-bottom: 35px;
-}
 
-.footer-contacts span {
-   display: inline-block;
-}
 .copyright {
    text-align: center;
    font-size: 10px;
@@ -904,6 +1005,58 @@ footer {
             width: 100%;
             margin-top: 30px;
          }
+      }
+   }
+}
+.breadcrumb {
+   max-width: 1170px;
+   padding-right: 25px;
+   margin: 10px auto 0px auto;
+   li {
+      display: inline-block;
+      margin-left: 25px;
+      margin-bottom: 10px;
+      padding: 10px;
+      position: relative;
+      background-color: #f7f7f8;
+      &::after {
+         content: "";
+         border-width: 17px 0px 17px 15px;
+         border-color: white #f7f7f8;
+         border-style: solid;
+         position: absolute;
+         top: 0;
+         right: -15px;
+      }
+      &::before {
+         content: "";
+         border-width: 17px 0px 17px 15px;
+         border-color: #f7f7f8 white;
+         border-style: solid;
+         position: absolute;
+         top: 0;
+         left: -15px;
+      }
+      &:first-child {
+         margin-left: 10px;
+         &::before {
+            content: none;
+         }
+      }
+      &:hover {
+         background-color: $maincolor;
+         &:hover::before {
+            border-color: $maincolor white;
+         }
+         &:hover::after {
+            border-color: white $maincolor;
+         }
+      }
+      a {
+         display: inline-block;
+         color: $text-color;
+         font-family: "Playfair Display", serif;
+         font-weight: normal;
       }
    }
 }

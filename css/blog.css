@@ -2,52 +2,52 @@
   background: url(../img/4.webp) no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 15% 0px 10% 0px;
+  padding: 10% 0px;
 }
 
-.top-banner .container {
-  padding-right: 50%;
+.top-banner h1 {
+  padding-right: 35%;
 }
 
 @media only all and (min-width: 3000px) {
   .top-banner {
-    background-image: url(../img/source/store/bg-4000.jpg);
+    background-image: url(../img/source/index/slide2-4000.jpg);
   }
 }
 
 @media only all and (max-width: 3000px) {
   .top-banner {
-    background-image: url(../img/source/store/bg-image3000.jpg);
+    background-image: url(../img/source/index/slide2-3000.jpg);
   }
 }
 
 @media only all and (max-width: 2500px) {
   .top-banner {
-    background-image: url(../img/source/store/bg-image2500.jpg);
+    background-image: url(../img/source/index/slide2-2500.jpg);
   }
 }
 
 @media only all and (max-width: 1920px) {
   .top-banner {
-    background-image: url(../img/source/store/bg-image1920.jpg);
+    background-image: url(../img/source/index/slide2-1920.jpg);
   }
 }
 
 @media only all and (max-width: 1366px) {
   .top-banner {
-    background-image: url(../img/source/store/bg-image1366.jpg);
+    background-image: url(../img/source/index/slide2-1366.jpg);
   }
 }
 
 @media only all and (max-width: 800px) {
   .top-banner {
-    background-image: url(../img/source/store/bg-image800.jpg);
+    background-image: url(../img/source/index/slide2-800.jpg);
   }
 }
 
 @media only all and (max-width: 415px) and (-webkit-max-device-pixel-ratio: 1), only all and (max-width: 415px) and (max-resolution: 1dppx) {
   .top-banner {
-    background-image: url(../img/source/store/bg-image415.jpg);
+    background-image: url(../img/source/index/slide2-415.jpg);
   }
 }
 

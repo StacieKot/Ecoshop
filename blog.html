@@ -8,7 +8,19 @@
    <title></title>
    <link href="css/style.css" rel="stylesheet" type="text/css">
    <link href="css/blog.css" rel="stylesheet" type="text/css">
-
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="manifest" href="site.webmanifest">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+   <meta http-equiv="cleartype" content="on" />
+   <meta name="HandheldFriendly" content="True" />
+   <meta name="format-detection" content="telephone=no" />
+   <meta name="format-detection" content="address=no" />
+   <meta name="x-rim-auto-match" content="none" forua="true">
+   <!-- saved from url=(0014)about:internet -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 </head>
 
 <body>
@@ -54,7 +66,7 @@
                   </ul>
                </li>
                <li><a href="blog.html">Блог</a></li>
-               <li><a href="#">Контакты</a></li>
+               <li><a href="index.html">Контакты</a></li>
             </ul>
          </nav>
          <div class="nav-icon">
@@ -76,15 +88,35 @@
                   </form>
                </div>
             </div>
-            <div class="icon-cart" onclick=""><span>2</span>
+            <div class="icon-cart" onclick=""><span>3</span>
                <div class="popup cart">
                   <div class="row-cart">
                      <div class="item-img">
-                        <img src="img/3.webp" alt="" title="">
+                        <picture>
+                           <source srcset="img/products/catalog/dresses/dress4.webp" type="image/webp">
+                           <img src="img/products/catalog/dresses/dress4.jpg" alt="Белое хлопковое платье-рубашка">
+                        </picture>
                      </div>
                      <div class="item-info">
                         <div>Платье</div>
-                        <div class="text">Вечернее платье</div>
+                        <div class="text">Vero Moda</div>
+                     </div>
+                     <div class="item-result">
+                        <div>1</div>
+                        <div>120р.</div>
+                        <button type="submit">&#10006;</button>
+                     </div>
+                  </div>
+                  <div class="row-cart">
+                     <div class="item-img">
+                        <picture>
+                           <source srcset="img/products/catalog/dresses/dress7.webp" type="image/webp">
+                           <img src="img/products/catalog/dresses/dress7.jpg" alt="Свободное платье с пышными рукавами">
+                        </picture>
+                     </div>
+                     <div class="item-info">
+                        <div>Платье</div>
+                        <div class="text">ASOS DESIGN</div>
                      </div>
                      <div class="item-result">
                         <div>1</div>
@@ -94,21 +126,24 @@
                   </div>
                   <div class="row-cart">
                      <div class="item-img">
-                        <img src="img/2.webp" alt="" title="">
+                        <picture>
+                           <source srcset="img/products/catalog/dresses/dress2.webp" type="image/webp">
+                           <img src="img/products/catalog/dresses/dress2.jpg" alt="Летнее льняное платье мини">
+                        </picture>
                      </div>
                      <div class="item-info">
-                        <div>Топ</div>
-                        <div class="text">Спортивный топ</div>
+                        <div>Платье</div>
+                        <div class="text">Reformation</div>
                      </div>
                      <div class="item-result">
                         <div>1</div>
-                        <div>150р.</div>
+                        <div>170р.</div>
                         <button type="submit">&#10006;</button>
                      </div>
                   </div>
                   <div class="sum clearfix">
                      <div>Сумма</div>
-                     <div>320р.</div>
+                     <div>440р.</div>
                   </div>
                   <a href="cart.html" class="button">Перейти в корзину</a>
                </div>
@@ -124,88 +159,112 @@
       </div>
       <div class="top-banner">
          <div class="container">
-            <h1>Платья из новых коллекций</h1>
-            <a href="store.html" class="button">К покупкам</a>
+            <h1>Скидка 15% на весь офисный гардероб</h1>
+            <div class="buttons-list">
+               <ul>
+                  <li><a href="index.html">На главную</a></li>
+                  <li><a href="store.html">Смотреть</a></li>
+               </ul>
+            </div>
          </div>
-      </div>
    </header>
-
+   <div class="breadcrumb">
+      <ul>
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="blog.html">Блог</a></li>
+      </ul>
+   </div>
    <main>
       <div class="container">
          <article>
-            <h4><span>Одежда</span></h4>
-            <h2>10 покупок этого лета</h2>
+            <h4><span>Экология</span></h4>
+            <h2>Что такое экологичная мода?</h2>
             <div class="img-container">
                <picture>
-                  <source srcset="img/2.webp" type="image/webp">
-                  <img src="img/1.jpg" alt="" title="">
+                  <source srcset="img/source/blog/article3-1170.webp" type="image/webp" media="(min-width:800px)">
+                  <source srcset="img/source/blog/article3-800.webp" type="image/webp"
+                     media="(max-width:800px) and (min-width:600px)">
+                  <source srcset="img/source/blog/article3-600.webp" type="image/webp" media="(max-width:600px)">
+                  <img src="img/source/blog/article3-1170.jpg" alt="Девушка с кофе на фоне розовой стены">
                </picture>
             </div>
             <div class="blog-content">
                <div>
                   <div>Февраль</div>
-                  <div class="date">02</div>
-                  <div><span class="icon-comment-o"> </span>08</div>
+                  <div class="date">06</div>
+                  <div><span class="icon-comment-o"> </span>15</div>
                </div>
                <div>
-                  <p class="text">Хотите быть этим летом стильными и экологичными? Мы составили список главных покупок
-                     летнего сезона. Всё, как мы любим: экобренды превратили переработанные материалы (пластик, хлопок,
-                     бумагу и даже картофель!) в незаменимые этим летом предметы одежды и аксессуаров.</p>
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, voluptatem, culpa
-                     aut sequi praesentium vero, at perspiciatis ullam laboriosam quas aspernatur? Sed fugiat nesciunt
-                     quis iusto suscipit perferendis repellendus ratione.</p>
+                  <p class="text">Экологичная мода &mdash; современное направление в индустрии моды, в котором ценность
+                     предмета одежды определяется степенью его влияния на окружающую среду. Жизненный путь вещи, начиная
+                     с места добычи сырья и заканчивая местом утилизации,
+                     выстраивается с учетом минимизации негативного влияния на окружающую среду. Бренды выбирают
+                     экологичные сырьё и
+                     материалы, безвредное производство и оптимизируют логистику, а покупатели осознанно выбирают
+                     товары, правильно их эксплуатируют и грамотно утилизируют.</p>
+                  <p class="text">Как же определить, какое влияние оказывает та или иная вещь на природу? Для оценки
+                     влияния производства, сбыта или жизнедеятельности человека на окружающую среду используют такое
+                     понятие как углеродный след. </p>
                   <a class="button" href="#" alt="Весенние тренды">Читать далее</a>
                </div>
             </div>
          </article>
          <article>
-            <h4><span>Одежда</span></h4>
-            <h2>10 покупок этого лета</h2>
+            <h4><span>Мода</span></h4>
+            <h2>Как COVID-19 влияет на моду</h2>
             <div class="img-container">
                <picture>
-                  <source srcset="img/2.webp" type="image/webp">
-                  <img src="img/1.jpg" alt="" title="">
+                  <source srcset="img/source/blog/article1-1170.webp" type="image/webp" media="(min-width:800px)">
+                  <source srcset="img/source/blog/article1-800.webp" type="image/webp"
+                     media="(max-width:800px) and (min-width:600px)">
+                  <source srcset="img/source/blog/article1-600.webp" type="image/webp" media="(max-width:600px)">
+                  <img src="img/source/blog/article1-1170.jpg" alt="Защитная маска">
                </picture>
             </div>
             <div class="blog-content">
                <div>
                   <div>Февраль</div>
                   <div class="date">02</div>
-                  <div><span class="icon-comment-o"> </span>08</div>
+                  <div><span class="icon-comment-o"> </span>06</div>
                </div>
                <div>
-                  <p class="text">Хотите быть этим летом стильными и экологичными? Мы составили список главных покупок
-                     летнего сезона. Всё, как мы любим: экобренды превратили переработанные материалы (пластик, хлопок,
-                     бумагу и даже картофель!) в незаменимые этим летом предметы одежды и аксессуаров.</p>
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, voluptatem, culpa
-                     aut sequi praesentium vero, at perspiciatis ullam laboriosam quas aspernatur? Sed fugiat nesciunt
-                     quis iusto suscipit perferendis repellendus ratione.</p>
+                  <p class="text">Защитные маски для лица во время пандемии коронавируса стали
+                     необходимостью, во многих странах и регионахо ни стали обязательными в общественных местах. Но
+                     теперь маски также превращаются в аксессуар, который помогает людям выглядеть модно в любой
+                     ситуации &mdash; как на официальном мероприятии, так и на пляже.</p>
+                  <p class="text"></p>
                   <a class="button" href="#" alt="Весенние тренды">Читать далее</a>
                </div>
             </div>
          </article>
          <article>
-            <h4><span>Одежда</span></h4>
-            <h2>10 покупок этого лета</h2>
+            <h4><span>Ткани</span></h4>
+            <h2>Рейтинг экологичных тканей</h2>
             <div class="img-container">
                <picture>
-                  <source srcset="img/2.webp" type="image/webp">
-                  <img src="img/1.jpg" alt="" title="">
+                  <source srcset="img/source/blog/article2-1170.webp" type="image/webp" media="(min-width:800px)">
+                  <source srcset="img/source/blog/article2-800.webp" type="image/webp"
+                     media="(max-width:800px) and (min-width:600px)">
+                  <source srcset="img/source/blog/article2-600.webp" type="image/webp" media="(max-width:600px)">
+                  <img src="img/source/blog/article2-1170.jpg" alt="Руки портного крупным планом">
                </picture>
             </div>
             <div class="blog-content">
                <div>
-                  <div>Февраль</div>
-                  <div class="date">02</div>
+                  <div>Январь</div>
+                  <div class="date">23</div>
                   <div><span class="icon-comment-o"> </span>08</div>
                </div>
                <div>
-                  <p class="text">Хотите быть этим летом стильными и экологичными? Мы составили список главных покупок
-                     летнего сезона. Всё, как мы любим: экобренды превратили переработанные материалы (пластик, хлопок,
-                     бумагу и даже картофель!) в незаменимые этим летом предметы одежды и аксессуаров.</p>
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, voluptatem, culpa
-                     aut sequi praesentium vero, at perspiciatis ullam laboriosam quas aspernatur? Sed fugiat nesciunt
-                     quis iusto suscipit perferendis repellendus ratione.</p>
+                  <p class="text">Термин &laquo;экологичность&raquo; означает, что ткани безопасны для окружающей среды,
+                     перерабатываемы или биоразлагаемы. Сложность составления данного рейтинга вызвана разнообразием
+                     мнений: одни специалисты считают,
+                     что экологичными можно считать только натуральные сертифицированные ткани и нельзя &mdash; ткани,
+                     полученные химическим путем, например, переработанный нейлон, который так любит
+                     использовать технологичная Patagoniaю.
+                     В это статье мы составили для вас их рейтинг на основе
+                     стандартов компании Refornation в выборе тканей, который состоит из 5 категорий.
+                  </p>
                   <a class="button" href="#" alt="Весенние тренды">Читать далее</a>
                </div>
             </div>

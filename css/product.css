@@ -2,10 +2,10 @@
   background: url(../img/4.webp) no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10% 0px;
+  padding: 12% 0px;
 }
 
-.top-banner .container {
+.top-banner h1 {
   padding-right: 45%;
 }
 
@@ -52,7 +52,7 @@
 }
 
 main {
-  margin: 140px 0px;
+  margin: 70px 0px 140px 0px;
 }
 
 p {
@@ -492,7 +492,7 @@ p {
 
 @media only all and (max-width: 700px) {
   main {
-    margin: 70px 0px;
+    margin: 35px 0px 70px 0px;
   }
   .gallery-info-wrapper {
     margin-bottom: 70px;

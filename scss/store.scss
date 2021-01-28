@@ -7,8 +7,8 @@ $border-color: #d1d5db;
    background: url(../img/4.webp) no-repeat;
    background-repeat: no-repeat;
    background-size: cover;
-   padding: 15% 0px 10% 0px;
-   .container {
+   padding: 15% 0px 12% 0px;
+   h1 {
       padding-right: 50%;
    }
 }
@@ -61,7 +61,7 @@ aside {
       display: block;
    }
    > div {
-      margin-bottom: 30px;
+      margin-bottom: 10px;
    }
    .banner {
       background: url(../img/source/store/aside-banner.jpg) no-repeat;
@@ -73,12 +73,20 @@ aside {
          color: white;
       }
    }
-   .filter-name::after {
-      position: absolute;
-      right: 0;
-      top: 25%;
+   .filter-name {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      &:hover {
+         background-color: $maincolor;
+      }
+      &::after {
+         position: absolute;
+         right: 1px;
+         top: 25%;
+      }
    }
 }
+
 .filter-name {
    display: block;
    padding-left: 14px;
@@ -100,7 +108,7 @@ aside {
       font-size: 6px;
       color: $maincolor;
       position: absolute;
-      left: 0;
+      left: 1px;
       top: 30%;
    }
 }
@@ -127,6 +135,7 @@ aside {
          }
       }
    }
+
    li {
       line-height: 40px;
       border-bottom: 1px solid $border-color;
@@ -154,6 +163,14 @@ aside {
       }
       label {
          display: block;
+      }
+      &.active {
+         &::before {
+            color: $maincolor;
+         }
+         a {
+            color: $maincolor;
+         }
       }
    }
 }
@@ -362,7 +379,7 @@ main {
 }
 @media only all and (max-width: 460px) {
    .aside-filters {
-      top: 0px;
+      top: -3px;
    }
    .top-filters {
       align-items: flex-end;
