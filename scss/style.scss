@@ -460,12 +460,12 @@ a.button {
    &::before {
       content: "";
       position: absolute;
-      width: 15px;
-      height: 15px;
+      width: 13px;
+      height: 13px;
       border-radius: 5px 0px;
       background-color: $maincolor;
       transform: rotate(45deg);
-      top: -9px;
+      top: -8px;
    }
    &::after {
       content: "";
@@ -473,9 +473,9 @@ a.button {
       border-radius: 4px 0px;
       background-color: white;
       transform: rotate(45deg);
-      width: 15px;
-      height: 15px;
-      top: -7px;
+      width: 13px;
+      height: 13px;
+      top: -6px;
    }
 
    input {
@@ -504,10 +504,10 @@ a.button {
 .icon-user {
    .popup {
       &::before {
-         right: 50px;
+         right: 53px;
       }
       &::after {
-         right: 50px;
+         right: 53px;
       }
    }
 }
@@ -515,15 +515,9 @@ a.button {
    .popup {
       &::before {
          right: 4px;
-         width: 13px;
-         height: 13px;
-         top: -8px;
       }
       &::after {
          right: 4px;
-         width: 13px;
-         height: 13px;
-         top: -6px;
       }
    }
 }
