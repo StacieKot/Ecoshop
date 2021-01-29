@@ -170,8 +170,10 @@ p {
       display: block;
       position: relative;
       padding-bottom: 15px;
-      border-bottom: $border-color solid 1px;
       margin-bottom: 15px;
+      border-bottom: $border-color solid 1px;
+      font-weight: 600;
+      text-transform: uppercase;
       > div {
          float: right;
          margin-right: 25px;
@@ -213,6 +215,7 @@ p {
       display: inline-block;
       margin-right: 40px;
       padding-bottom: 15px;
+      text-transform: uppercase;
    }
    input {
       display: none;
@@ -302,6 +305,8 @@ p {
    form > label {
       margin: 30px 0px 15px 0px;
       display: inline-block;
+      font-weight: 600;
+      text-transform: uppercase;
    }
    .button {
       width: 16em;
@@ -336,6 +341,7 @@ p {
 @media only all and (max-width: 900px) {
    .gallery-info-wrapper {
       flex-wrap: wrap;
+      margin-bottom: 70px;
    }
    .product-slider {
       flex: 0 0 100%;

@@ -246,8 +246,10 @@ p {
   display: block;
   position: relative;
   padding-bottom: 15px;
-  border-bottom: #d1d5db solid 1px;
   margin-bottom: 15px;
+  border-bottom: #d1d5db solid 1px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .details-block label > div {
@@ -293,6 +295,7 @@ p {
   display: inline-block;
   margin-right: 40px;
   padding-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .product-description input {
@@ -399,6 +402,8 @@ p {
 .review-form form > label {
   margin: 30px 0px 15px 0px;
   display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .review-form .button {
@@ -447,6 +452,7 @@ p {
   .gallery-info-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 70px;
   }
   .product-slider {
     -webkit-box-flex: 0;
