@@ -1270,3 +1270,18 @@ footer .footer-navigation a:hover {
 .err .buttons-list {
   margin: 0px auto;
 }
+
+@media only all and (max-width: 938px) {
+  .err {
+    min-height: calc(100vh - 80px);
+  }
+  .err div:nth-child(2) {
+    margin: 70px 0px;
+  }
+}
+
+@media only all and (max-width: 370px) {
+  .err {
+    min-height: calc(100vh - 60px);
+  }
+}
