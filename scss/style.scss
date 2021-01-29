@@ -111,13 +111,13 @@ h6 {
    text-align: center;
 }
 
-.top-header {
+header {
    padding: 40px 0px;
    display: flex;
    position: relative;
 }
 .logo {
-   flex: 0 1 200px;
+   flex: 0 0 200px;
    padding: 7px 0px;
 }
 header {
@@ -234,10 +234,9 @@ header {
    }
 }
 
-// Адаптив для top-header
+// Адаптив для header
 @media only all and (max-width: 938px) {
-   .top-header {
-      justify-content: space-between;
+   header {
       padding: 10px 0px;
    }
    .navigation {
@@ -323,38 +322,29 @@ header {
    }
    .logo {
       order: 2;
+      flex: 1 1 240px;
+      padding: 0px 15px;
+      align-self: center;
+      text-align: center;
    }
    .nav-icon {
-      flex: 0 1 80px;
+      flex: 0 0 80px;
       order: 3;
       > div {
          padding-left: 0px;
       }
    }
 }
-@media only all and (max-width: 360px) {
-   .top-header {
-      flex-wrap: wrap;
+@media only all and (max-width: 370px) {
+   header {
       padding: 0px;
    }
    .logo {
-      order: 1;
-      flex: 0 0 100%;
-      padding: 0px;
       img {
-         max-width: 100%;
+         width: 100%;
       }
    }
-   .navigation {
-      order: 2;
-      flex: 0 0 30px;
-   }
-   .nav-icon {
-      order: 3;
-      flex: 0 0 80px;
-   }
 }
-
 .top-banner,
 .top-slider {
    .button {
