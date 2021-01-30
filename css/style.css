@@ -337,9 +337,10 @@ header a {
     z-index: 3;
     position: absolute;
     top: 100%;
-    left: -10px;
+    padding: 10px 20px;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
   }
   .navigation input[name="menu"]:checked + label > span:nth-child(1) {
     -webkit-transform: rotate(40deg);

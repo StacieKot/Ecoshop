@@ -289,8 +289,9 @@ header {
          z-index: 3;
          position: absolute;
          top: 100%;
-         left: -10px;
+         padding: 10px 20px;
          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+         width: 100%;
       }
 
       input[name="menu"]:checked + label > span:nth-child(1) {
