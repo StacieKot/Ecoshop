@@ -301,9 +301,8 @@ input[id="filters"] {
 .top-filters .filter-list {
   font-size: 14px;
   position: absolute;
-  top: 15px;
-  padding-left: 5px;
-  padding-right: 5px;
+  top: 5px;
+  padding: 10px 20px;
 }
 
 .top-filters > div:nth-child(2) {
@@ -318,7 +317,7 @@ input[id="filters"] {
   background-color: white;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 2;
 }
 
 .info {
@@ -566,7 +565,11 @@ main {
   line-height: 25px;
 }
 
-.pagination div:first-child li a:target {
+.pagination div:first-child li a:hover {
+  background-color: #ffe115;
+}
+
+.pagination div:first-child li a.active {
   background-color: #ffe115;
 }
 
