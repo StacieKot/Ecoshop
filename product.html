@@ -56,17 +56,17 @@
             <li class="submenu-container">
                <input type="checkbox" name="submenu" id="submenu2">
                <label for="submenu2" class="submenu-label">О проекте</label>
-               <a href="index.html">О проекте</a>
+               <a href="#">О проекте</a>
                <ul class="submenu">
-                  <li><a href="index.html">Наша история</a></li>
-                  <li><a href="index.html">Экологичность</a></li>
-                  <li><a href="index.html">Команда</a></li>
-                  <li><a href="index.html">Карьера</a></li>
-                  <li><a href="index.html">Бренды</a></li>
+                  <li><a href="#">Наша история</a></li>
+                  <li><a href="#">Экологичность</a></li>
+                  <li><a href="#">Команда</a></li>
+                  <li><a href="#">Карьера</a></li>
+                  <li><a href="#">Бренды</a></li>
                </ul>
             </li>
             <li><a href="blog.html">Блог</a></li>
-            <li><a href="index.html">Контакты</a></li>
+            <li><a href="#">Контакты</a></li>
          </ul>
       </nav>
       <div class="nav-icon">
@@ -83,6 +83,7 @@
                <form method="GET" action="login">
                   <input type="text" name="user-name" placeholder="Имя пользователя">
                   <input type="password" name="password" placeholder="Пароль">
+                  <a href="#" title="Регистрация">Создать аккаунт</a>
                   <a href="#" title="Восстановление пароля">Забыли пароль?</a>
                   <button class="button" type="submit">Вход</button>
                </form>
@@ -408,7 +409,7 @@
                   </div>
                </div>
                <div class="review-form">
-                  <form method="GET" action="review">
+                  <form method="GET" action='http://fe.it-academy.by/TestForm.php' name="review" novalidate>
                      <h3>Оставить отзыв</h3>
                      <div class="stars">
                         <input type="checkbox" id="star1">
@@ -423,11 +424,11 @@
                         <label for="star5"></label>
                      </div>
                      <label for="new-review">Введите отзыв</label>
-                     <textarea id="new-review" name="new-review"></textarea>
+                     <textarea id="new-review" name="newreview"></textarea>
                      <label for="name">Введите ваше имя</label>
                      <textarea id="name" name="name"></textarea>
-                     <label for="email-for-review">Введите ваш email</label>
-                     <textarea id="email-for-review" name="email-for-review"></textarea>
+                     <label for="email-address">Введите ваш email</label>
+                     <textarea id="email-address" name="emailaddress"></textarea>
                      <button class="button" type="submit">Оставить отзыв</button>
                   </form>
                </div>
@@ -1099,12 +1100,13 @@
       </div>
       <div class="subscription-block">
          <div class="container">
-            <form class="subscription-form" method="post" action="subscription.php">
+            <form class="subscription-form" method="post" action='http://fe.it-academy.by/TestForm.php'
+               name="subscription" novalidate>
                <h2>Рассылка</h2>
                <div class="text">Подпишитесь на нашу рассылку и получите скидку 15% на вашу следующую покупку онлайн!
                </div>
                <div class="clearfix">
-                  <input type="email" name="email" required placeholder="Enter your email adress">
+                  <input type="email" name="email" placeholder="Enter your email adress">
                   <button type="submit">Send me</button>
                </div>
             </form>
@@ -1163,6 +1165,7 @@
          </div>
       </div>
    </footer>
+   <script src="js/script.js"></script>
 </body>
 
 </html>

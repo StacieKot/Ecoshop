@@ -541,6 +541,13 @@ a.button {
          font-weight: bold;
       }
    }
+   form {
+      a {
+         &:first-of-type {
+            float: right;
+         }
+      }
+   }
    li {
       display: inline-block;
       a {
@@ -860,9 +867,6 @@ footer {
             width: 62%;
             height: 50px;
             float: left;
-            &:invalid {
-               color: red;
-            }
             &::placeholder {
                font-family: "Playfair Display", serif;
                color: $text-color;
