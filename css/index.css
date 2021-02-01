@@ -298,10 +298,10 @@
 
 @media only all and (max-width: 420px) {
   .blog-item-1 {
-    background-image: url(../img/source/blog/article1-210.jpg);
+    background-image: url(../img/source/blog/article1-400.jpg);
   }
   .blog-item-2 {
-    background-image: url(../img/source/blog/article2-210.jpg);
+    background-image: url(../img/source/blog/article2-400.jpg);
   }
 }
 

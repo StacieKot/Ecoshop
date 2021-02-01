@@ -3,7 +3,7 @@ var formElement = document.forms.review;
 formElement.onsubmit = validateReviewForm;
 
 function validateReviewForm() {
-   var newReview = formElement.elements.newreview;
+   var newReview=formElement.elements.newreview;
    var name = formElement.elements.name;
    var email = formElement.elements.emailaddress;
 
