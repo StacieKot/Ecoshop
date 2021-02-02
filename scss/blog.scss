@@ -83,6 +83,13 @@ article {
       }
       .text {
          text-align: left;
+         dt{
+            margin-bottom: 20px;
+            text-align: center;
+         }
+         dd{
+            margin-bottom: 10px;
+         }
       }
       .button {
          width: 210px;

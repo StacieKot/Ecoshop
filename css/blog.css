@@ -107,6 +107,15 @@ article .blog-content .text {
   text-align: left;
 }
 
+article .blog-content .text dt {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+article .blog-content .text dd {
+  margin-bottom: 10px;
+}
+
 article .blog-content .button {
   width: 210px;
   margin: 40px auto 0px auto;
