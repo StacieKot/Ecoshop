@@ -205,7 +205,16 @@
                   <p class="text">Как же определить, какое влияние оказывает та или иная вещь на природу? Для оценки
                      влияния производства, сбыта или жизнедеятельности человека на окружающую среду используют такое
                      понятие как углеродный след. </p>
-                  <a class="button" href="blog.html">Читать далее</a>
+                  <p id="article3"></p>
+                  <input type=button class="button" onclick='loadArticle3()' value="Читать далее">
+                  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+
+                     <script>
+                        function loadArticle3() {
+                           $('#article3').load("article3.html");
+                        }
+                     </script>
+
                </div>
             </div>
          </article>
@@ -354,6 +363,7 @@
       </div>
    </footer>
    <script src="js/script.js"></script>
+   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
 </body>
 
 </html>

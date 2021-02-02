@@ -1,3 +1,5 @@
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+
 var formElement2 = document.forms.subscription;
 formElement2.onsubmit = validateSubscriptionForm;
 
@@ -11,4 +13,9 @@ function validateSubscriptionForm() {
       return false;
    }
    return true;
+}
+
+
+function loadArticle3(){
+      $('#article3').load("../article3.html");
 }
