@@ -109,7 +109,8 @@ article .blog-content .text {
 
 article .blog-content .button {
   width: 210px;
-  margin: 60px auto 0px auto;
+  margin: 40px auto 0px auto;
+  display: block;
 }
 
 @media only all and (max-width: 700px) {
