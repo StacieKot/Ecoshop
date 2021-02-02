@@ -712,18 +712,18 @@ a.button {
   font-size: 12px;
 }
 
-.cart .sum div {
+.cart .cart-sum div {
   float: left;
   width: 50%;
   padding: 20px 0px 5px 0px;
   font-weight: bold;
 }
 
-.cart .sum div:first-child {
+.cart .cart-sum div:first-child {
   text-transform: uppercase;
 }
 
-.cart .sum div:last-child {
+.cart .cart-sum div:last-child {
   text-align: right;
 }
 

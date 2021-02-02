@@ -141,7 +141,7 @@
                      <button type="submit">&#10006;</button>
                   </div>
                </div>
-               <div class="sum clearfix">
+               <div class="cart-sum clearfix">
                   <div>Сумма</div>
                   <div>440р.</div>
                </div>
@@ -198,9 +198,9 @@
                <h4>Платье</h4>
                <div class="text">Vero Moda / Белое хлопковое платье-рубашка</div>
             </div>
-            <div>120р.</div>
+            <div class="price">120р.</div>
             <div>
-               <select name="quantity">
+               <select name="quantity" class="quantity">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -209,11 +209,11 @@
                   <option value="6">6</option>
                   <option value="7">7</option>
                   <option value="8">8</option>
-                  <option value="8">9</option>
-                  <option value="8">10</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
                </select>
             </div>
-            <div>120р.</div>
+            <div class="sum"></div>
             <div class="delete-item">
                <button type="submit" class="icon-times-circle"></button>
             </div>
@@ -231,9 +231,9 @@
                <h4>Платье</h4>
                <div class="text">ASOS DESIGN / Свободное платье с пышными рукавами</div>
             </div>
-            <div>150р.</div>
+            <div class="price">150р.</div>
             <div>
-               <select name="quantity">
+               <select name="quantity" class="quantity">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -242,11 +242,11 @@
                   <option value="6">6</option>
                   <option value="7">7</option>
                   <option value="8">8</option>
-                  <option value="8">9</option>
-                  <option value="8">10</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
                </select>
             </div>
-            <div>150р.</div>
+            <div class="sum"></div>
             <div class="delete-item">
                <button type="submit" class="icon-times-circle"></button>
             </div>
@@ -264,9 +264,9 @@
                <h4>Платье</h4>
                <div class="text">Reformation / Льняное платье</div>
             </div>
-            <div>170р.</div>
+            <div class="price">170р.</div>
             <div>
-               <select name="quantity">
+               <select name="quantity" class="quantity">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -275,11 +275,11 @@
                   <option value="6">6</option>
                   <option value="7">7</option>
                   <option value="8">8</option>
-                  <option value="8">9</option>
-                  <option value="8">10</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
                </select>
             </div>
-            <div>170р.</div>
+            <div class="sum"></div>
             <div class="delete-item">
                <button type="submit" class="icon-times-circle"></button>
             </div>
@@ -303,9 +303,9 @@
             <div>
                <h3>Товары на сумму:</h3>
                <div class="check">
-                  <div>Стоимость <span>440р.</span></div>
-                  <div>Доставка <span>0р.</span></div>
-                  <div>Итого<span>440р.</span></div>
+                  <div>Стоимость <span id="cost"></span></div>
+                  <div>Доставка <span>0 р.</span></div>
+                  <div>Итого<span id="total"></span></div>
                </div>
                <a href="#" class="button" title="Переход на страницу оплаты">Оплатить</a>
             </div>
@@ -395,6 +395,7 @@
       </div>
    </footer>
    <script src="js/script.js"></script>
+   <script src="js/total-sum.js"></script>
 </body>
 
 </html>
