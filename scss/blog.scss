@@ -86,16 +86,8 @@ article {
       }
       .button {
          width: 210px;
-         margin: 60px auto 0px auto;
+         margin: 40px auto 0px auto;
          display: block;
-      }
-      dt{
-         text-align: center;
-         font-weight: 600;
-         margin-bottom: 20px;
-      }
-      dd{
-         margin-bottom: 10px;
       }
    }
 }
@@ -107,9 +99,10 @@ article {
             flex: 0 0 auto;
          }
          > div:nth-child(2) {
-            padding-right: 20px;
+            padding-right: 0px;
             p {
                text-align: justify;
+               padding-right: 20px;
             }
          }
       }

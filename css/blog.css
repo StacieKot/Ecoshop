@@ -109,18 +109,8 @@ article .blog-content .text {
 
 article .blog-content .button {
   width: 210px;
-  margin: 60px auto 0px auto;
+  margin: 40px auto 0px auto;
   display: block;
-}
-
-article .blog-content dt {
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-article .blog-content dd {
-  margin-bottom: 10px;
 }
 
 @media only all and (max-width: 700px) {
@@ -133,10 +123,11 @@ article .blog-content dd {
             flex: 0 0 auto;
   }
   article .blog-content > div:nth-child(2) {
-    padding-right: 20px;
+    padding-right: 0px;
   }
   article .blog-content > div:nth-child(2) p {
     text-align: justify;
+    padding-right: 20px;
   }
 }
 
