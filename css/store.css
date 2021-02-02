@@ -586,3 +586,8 @@ main {
   fill: url(#p-stripes);
   background-color: #f554f5;
 }
+
+.icon-color-disc {
+  margin-bottom: 5px;
+  display: inline-block;
+}

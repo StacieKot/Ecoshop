@@ -17,3 +17,6 @@ function validateSubscriptionForm() {
 function loadArticle3() {
    $('#article3').load("article3.html");
 }
+function loadArticle2() {
+   $('#article2').load("article2.html");
+}
