@@ -116,6 +116,15 @@ article .blog-content .text dd {
   margin-bottom: 10px;
 }
 
+article .blog-content .text h4 {
+  margin-bottom: 20px;
+}
+
+article .blog-content .text li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
 article .blog-content .button {
   width: 210px;
   margin: 40px auto 0px auto;
