@@ -12,7 +12,7 @@ document.getElementById('total').innerText=cost+ " р.";
 
 function ssuumm(i){
    document.addEventListener("DOMContentLoaded", function() {
-      document.getElementsByClassName("quantity")[i].onclick = function() {
+      document.getElementsByClassName("quantity")[i].onchange = function() {
          var quantity = document.getElementsByClassName("quantity")[i].value;
          var price=parseInt(document.getElementsByClassName('price')[i].innerHTML);
          document.getElementsByClassName('sum')[i].innerText=price*quantity;
