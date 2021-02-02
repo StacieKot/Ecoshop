@@ -90,13 +90,13 @@ article {
          dd{
             margin-bottom: 10px;
          }
-         ul.text{
-            margin-top: 20px;
-            margin-left: 15px;
-         }
          li{
             list-style-type: disc;
             margin-bottom: 10px;
+            margin-left: 15px;
+            &:first-child{
+               margin-top: 20px;
+            }
          }
       }
       .button {

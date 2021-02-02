@@ -116,14 +116,14 @@ article .blog-content .text dd {
   margin-bottom: 10px;
 }
 
-article .blog-content .text ul.text {
-  margin-top: 20px;
-  margin-left: 15px;
-}
-
 article .blog-content .text li {
   list-style-type: disc;
   margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+article .blog-content .text li:first-child {
+  margin-top: 20px;
 }
 
 article .blog-content .button {
