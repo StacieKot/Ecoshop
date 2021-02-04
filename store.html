@@ -199,18 +199,18 @@
                <input type="checkbox" class="check-filter" id="filter-by-price">
                <label class="filter-name" for="filter-by-price">Цена
                </label>
-               <form method="GET" action="filterbyprice.php" class="filter-by-price filter-list clearfix">
+               <form class="filter-by-price filter-list clearfix">
                   <div>
                      <label for="min">От</label>
-                     <input type="number" name="min" id="min" value="0">
+                     <input type="number" name="min" id="min" placeholder="0">
                   </div>
                   <div>
                      <label for="max">До</label>
-                     <input type="number" name="max" id="max" value="99999">
+                     <input type="number" name="max" id="max" placeholder="999">
                   </div>
-                  <button type="submit" class="button">Применить</button>
+                  <label for='filter' class="button">Применить</label>
+                  <input type='button' id='filter' onclick="filtrByPrice()">
                </form>
-            </div>
             <div>
                <input type="checkbox" class="check-filter" id="filter-by-color">
                <label class="filter-name" for="filter-by-color">Цвет</label>
@@ -905,6 +905,7 @@
    </footer>
    <script src="js/validateReview.js"></script>
    <script src="js/script.js"></script>
+   <script src="js/filtrbyprice.js"></script>
 </body>
 
 </html>

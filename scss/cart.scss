@@ -119,6 +119,7 @@ main {
    select {
       padding: 5px 15px;
       border: $text-maincolor 1px solid;
+      background-color: none;
    }
 }
 @media only all and (max-width: 600px) {

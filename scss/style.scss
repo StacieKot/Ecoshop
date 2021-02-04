@@ -67,9 +67,6 @@ h4 {
    font-size: 18px;
 }
 // Пересмотреть, где я их использую
-h5 {
-   font-size: 14px;
-}
 h6 {
    font-size: 14px;
    font-weight: 600;
@@ -226,11 +223,14 @@ header {
       height: 3px;
       position: absolute;
       background-color: $text-maincolor;
+      &:first-child{
+         top:2px;
+      }
       &:nth-child(2) {
-         top: 10px;
+         top: 12px;
       }
       &:nth-child(3) {
-         top: 20px;
+         top: 22px;
       }
    }
 }
@@ -296,12 +296,12 @@ header {
 
       input[name="menu"]:checked + label > span:nth-child(1) {
          transform: rotate(40deg);
-         top: 7px;
+         top: 9px;
          transition-duration: 0.3s;
       }
       input[name="menu"]:checked + label > span:nth-child(3) {
          transform: rotate(-40deg);
-         top: 7px;
+         top: 9px;
          transition-duration: 0.3s;
       }
       input[name="menu"]:checked + label > span:nth-child(2) {
@@ -433,6 +433,7 @@ header {
    font-weight: bold;
    padding: 15px 10px;
    margin-top: 20px;
+   text-align: center;
    &:hover {
       background-color: $maincolor;
       transition-duration: 0.5s;
@@ -440,7 +441,6 @@ header {
 }
 a.button {
    display: block;
-   text-align: center;
 }
 
 // Появляющаяся форма регистрации

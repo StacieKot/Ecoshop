@@ -71,10 +71,6 @@ h4 {
   font-size: 18px;
 }
 
-h5 {
-  font-size: 14px;
-}
-
 h6 {
   font-size: 14px;
   font-weight: 600;
@@ -266,12 +262,16 @@ header a {
   background-color: #2d3a4b;
 }
 
+.menu-label span:first-child {
+  top: 2px;
+}
+
 .menu-label span:nth-child(2) {
-  top: 10px;
+  top: 12px;
 }
 
 .menu-label span:nth-child(3) {
-  top: 20px;
+  top: 22px;
 }
 
 @media only all and (max-width: 938px) {
@@ -345,14 +345,14 @@ header a {
   .navigation input[name="menu"]:checked + label > span:nth-child(1) {
     -webkit-transform: rotate(40deg);
             transform: rotate(40deg);
-    top: 7px;
+    top: 9px;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
   }
   .navigation input[name="menu"]:checked + label > span:nth-child(3) {
     -webkit-transform: rotate(-40deg);
             transform: rotate(-40deg);
-    top: 7px;
+    top: 9px;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
   }
@@ -492,6 +492,7 @@ header a {
   font-weight: bold;
   padding: 15px 10px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .button:hover {
@@ -502,7 +503,6 @@ header a {
 
 a.button {
   display: block;
-  text-align: center;
 }
 
 .popup {
