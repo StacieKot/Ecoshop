@@ -108,7 +108,9 @@ input, textarea{
 }
 input[type=button]{
    box-shadow: none;
+   cursor: pointer;
 }
+
 .text {
    font-family: "Playfair Display", serif;
    color: $text-color;
@@ -403,7 +405,7 @@ header {
          &:last-child {
             border-right: none;
          }
-         a {
+         button, a {
             color: white;
             text-transform: uppercase;
             font-weight: normal;
@@ -411,6 +413,7 @@ header {
             font-size: 12px;
             padding: 5px 15px;
             display: inline-block;
+            background-color: transparent;
             &:hover {
                color: $maincolor;
             }
