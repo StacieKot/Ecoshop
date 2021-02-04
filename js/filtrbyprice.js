@@ -6,9 +6,11 @@ for(var i=0; i<productQuantity.length;i++){
    var maxPrice = parseFloat(document.getElementById('max').value);
    var price = parseInt(document.querySelectorAll('.links>a:nth-child(3)')[i].innerHTML);
    var product = document.getElementsByClassName('product-cell')[i];
-   product.style.display='block';
+   product.hidden=false;
    if(price< minPrice || price>maxPrice){
-      product.style.display='none';
+      product.hidden=true;
    }
 }
 }
+
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .top-banner {
   background: url(../img/4.webp) no-repeat;
   background-repeat: no-repeat;
@@ -214,6 +215,8 @@ input.check-filter:checked + .filter-name::after {
   margin: 0px 10px;
   padding-left: 5px;
   line-height: 30px;
+  min-height: 30px;
+  /*Для IE*/
 }
 
 .filter-by-price input[type="number"]:focus {
@@ -396,12 +399,12 @@ input[id="icon-view"]:checked + label + input + label + main > div.product-cell 
 }
 
 main {
-  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .product-cell {
@@ -434,7 +437,7 @@ main {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   aside > div {
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin-bottom: 0px;
     border-bottom: 1px solid rgba(45, 58, 75, 0.5);
   }
@@ -481,16 +484,14 @@ main {
   input[id="filters"]:checked + label::after {
     content: "\e90e";
   }
+  main {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
   .product-cell {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
         flex-basis: calc((100% - 60px) / 3);
-    margin-bottom: 50px;
-  }
-  .product-cell:nth-child(3n + 1) {
-    margin-left: 0px;
-  }
-  input[id="icon-view"]:checked + label + input + label + main > div.product-cell {
-    margin-left: 0px;
+    margin: 0px 10px 50px 10px;
   }
   .store-wrapper {
     padding: 35px 0px 70px 0px;
@@ -506,14 +507,8 @@ main {
 
 @media only all and (max-width: 600px) {
   .product-cell {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-  }
-  .product-cell:nth-child(odd) {
-    margin-left: 0px;
-  }
-  .product-cell:nth-child(even) {
-    margin-left: 30px;
+    -ms-flex-preferred-size: calc((100% - 40px) / 2);
+        flex-basis: calc((100% - 40px) / 2);
   }
 }
 
