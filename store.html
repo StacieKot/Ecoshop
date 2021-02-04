@@ -198,7 +198,7 @@
             <div>
                <input type="checkbox" class="check-filter" id="filter-by-price">
                <label class="filter-name" for="filter-by-price">Цена</label>
-               <form class="filter-by-price filter-list clearfix">
+               <div class="filter-by-price filter-list clearfix">
                   <div>
                      <label for="min">От</label>
                      <input type="number" name="min" id="min" placeholder="0">
@@ -208,8 +208,10 @@
                      <input type="number" name="max" id="max" placeholder="999">
                   </div>
                   <label for='filter' class="button">Применить</label>
-                  <input type='button' id='filter' onclick="filtrByPrice()">
-               </form>
+                  <input type='button' id='filter' onclick="filterByPrice()">
+                  <label for='reset-filter' class="button">Сбросить фильтр</label>
+                  <input type='button' id='reset-filter' onclick="resetFilter()">
+               </div>
             </div>
             <div>
                <input type="checkbox" class="check-filter" id="filter-by-color">
@@ -418,9 +420,9 @@
                </form>
             </div>
          </div>
-         <input type="radio" name="view" id="icon-view">
+         <input type="radio" name="view" id="icon-view" onclick="productsview()">
          <label for="icon-view" class="icon-view"></label>
-         <input type="radio" name="view" id="icon-th-large" checked>
+         <input type="radio" name="view" id="icon-th-large" checked onclick="productsview()">
          <label for="icon-th-large" class="icon-th-large"></label>
          <main>
             <div class="product-cell">
@@ -905,7 +907,7 @@
    </footer>
    <script src="js/validateReview.js"></script>
    <script src="js/script.js"></script>
-   <script src="js/filtrbyprice.js"></script>
+   <script src="js/filterbyprice.js"></script>
 </body>
 
 </html>

@@ -208,11 +208,19 @@ input.check-filter:checked + .filter-name::after {
   float: left;
 }
 
+.filter-by-price > div :nth-of-type(2) {
+  float: right;
+}
+
+.filter-by-price > div > label {
+  display: inline-block;
+  width: 20%;
+}
+
 .filter-by-price input[type="number"] {
   display: inline-block;
   border: 1px solid #d1d5db;
-  width: 50%;
-  margin: 0px 10px;
+  width: 70%;
   padding-left: 5px;
   line-height: 30px;
   min-height: 30px;
@@ -229,10 +237,14 @@ input.check-filter:checked + .filter-name::after {
 }
 
 .filter-by-price .button {
-  width: 18ex;
-  float: right;
+  width: auto;
   border-radius: 5px;
-  margin-right: 20px;
+  font-size: 12px;
+  float: right;
+}
+
+.filter-by-price .button:first-of-type {
+  margin-left: 15px;
 }
 
 .filter-by-color {
@@ -304,7 +316,7 @@ input[id="filters"] {
 .top-filters .filter-list {
   font-size: 14px;
   position: absolute;
-  top: 5px;
+  top: 20px;
   padding: 10px 20px;
 }
 
@@ -348,9 +360,8 @@ input[name="view"]:checked + label {
 }
 
 input[id="icon-view"]:checked + label + input + label + main > div.product-cell {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  -ms-flex-preferred-size: calc( 100% - 30px);
+      flex-basis: calc( 100% - 30px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,7 +488,7 @@ main {
   input[id="filters"]:checked + label + aside {
     display: block;
     position: absolute;
-    top: 30px;
+    top: 45px;
     z-index: 2;
     width: 100%;
   }
@@ -514,7 +525,7 @@ main {
 
 @media only all and (max-width: 460px) {
   .aside-filters {
-    top: 20px;
+    top: 25px;
   }
   .top-filters {
     -webkit-box-pack: start;
@@ -523,9 +534,6 @@ main {
   }
   .store-wrapper {
     padding-top: 15px;
-  }
-  input[id="filters"]:checked + label + aside {
-    top: 40px;
   }
   input[id="icon-view"]:checked + label + input + label + main > div.product-cell .img-container {
     -ms-flex-preferred-size: 50%;

@@ -181,12 +181,18 @@ aside {
    > div {
       width: 50%;
       float: left;
+      :nth-of-type(2){
+         float: right;
+      }
+      >label{
+         display: inline-block;
+         width: 20%;
+      }
    }
    input[type="number"] {
       display: inline-block;
       border: 1px solid #d1d5db;
-      width: 50%;
-      margin: 0px 10px;
+      width: 70%;
       padding-left: 5px;
       line-height: 30px;
       min-height: 30px; /*Для IE*/
@@ -198,10 +204,13 @@ aside {
       font-weight: 600;
    }
    .button {
-      width: 18ex;
-      float: right;
+      width: auto;
       border-radius: 5px;
-      margin-right: 20px;
+      font-size: 12px;
+      float: right;
+      &:first-of-type{
+         margin-left: 15px;
+      }
    }
 }
 .filter-by-color {
@@ -257,7 +266,7 @@ input[id="filters"] {
    .filter-list {
       font-size: 14px;
       position: absolute;
-      top: 5px;
+      top: 20px;
       padding: 10px 20px;
    }
    > div:nth-child(2) {
@@ -292,7 +301,7 @@ input[name="view"]:checked + label {
    color: $maincolor;
 }
 input[id="icon-view"]:checked + label + input + label + main > div.product-cell {
-   flex: 0 0 100%;
+   flex-basis: calc( 100% - 30px );
    display: flex;
    border-bottom: 1px solid $border-color;
    border-top: 1px solid $border-color;
@@ -397,7 +406,7 @@ main {
    input[id="filters"]:checked + label + aside {
       display: block;
       position: absolute;
-      top: 30px;
+      top: 45px;
       z-index: 2;
       width: 100%;
    }
@@ -432,16 +441,13 @@ main {
 }
 @media only all and (max-width: 460px) {
    .aside-filters {
-      top: 20px;
+      top: 25px;
    }
    .top-filters {
       justify-content: flex-start;
    }
    .store-wrapper {
       padding-top: 15px;
-   }
-   input[id="filters"]:checked + label + aside {
-      top: 40px;
    }
    input[id="icon-view"]:checked + label + input + label + main > div.product-cell {
       .img-container {
