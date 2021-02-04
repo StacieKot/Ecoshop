@@ -101,6 +101,14 @@ h6 {
       letter-spacing: normal;
    }
 }
+input, textarea{
+   &:focus {
+   box-shadow: 0 0 2px 1px #ffe115;
+   }
+}
+input[type=button]{
+   box-shadow: none;
+}
 .text {
    font-family: "Playfair Display", serif;
    color: $text-color;

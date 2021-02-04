@@ -227,11 +227,6 @@ input.check-filter:checked + .filter-name::after {
   /*Для IE*/
 }
 
-.filter-by-price input[type="number"]:focus {
-  -webkit-box-shadow: 0 0 2px 1px #ffe115;
-          box-shadow: 0 0 2px 1px #ffe115;
-}
-
 .filter-by-price label {
   font-weight: 600;
 }

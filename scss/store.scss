@@ -196,9 +196,6 @@ aside {
       padding-left: 5px;
       line-height: 30px;
       min-height: 30px; /*Для IE*/
-      &:focus {
-         box-shadow: 0 0 2px 1px #ffe115;
-      }
    }
    label {
       font-weight: 600;

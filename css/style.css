@@ -109,6 +109,16 @@ h6 {
   }
 }
 
+input:focus, textarea:focus {
+  -webkit-box-shadow: 0 0 2px 1px #ffe115;
+          box-shadow: 0 0 2px 1px #ffe115;
+}
+
+input[type=button] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .text {
   font-family: "Playfair Display", serif;
   color: #666666;

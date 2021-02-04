@@ -80,8 +80,8 @@
                   <li><a class="icon-youtube" href="https://www.youtube.com/" target="_blank"></a></li>
                   <li><a class="icon-mail" href="mailto:stacie.kot@gmail.com" target="_blank"></a></li>
                </ul>
-               <form method="GET" action="login">
-                  <input type="text" name="user-name" placeholder="Имя пользователя">
+               <form name="loginform" method="GET" action="http://fe.it-academy.by/TestForm.php" novalidate>
+                  <input type="text" name="username" placeholder="Имя пользователя">
                   <input type="password" name="password" placeholder="Пароль">
                   <a href="#" title="Регистрация">Создать аккаунт</a>
                   <a href="#" title="Восстановление пароля">Забыли пароль?</a>
@@ -151,8 +151,8 @@
          </div>
          <div class="icon-search" onclick="">
             <div class="popup search-form">
-               <form method="GET" action="search">
-                  <input type="search" name="search" placeholder="Поиск">
+               <form method="GET" action="http://fe.it-academy.by/TestForm.php">
+                  <input type="search" name="search-query" placeholder="Поиск">
                </form>
             </div>
          </div>
@@ -1100,7 +1100,7 @@
       </div>
       <div class="subscription-block">
          <div class="container">
-            <form class="subscription-form" method="post" action="subscription.php" name="subscription" novalidate>
+            <form class="subscription-form" method="post" action="http://fe.it-academy.by/TestForm.php" name="subscription" novalidate>
                <h2>Рассылка</h2>
                <div class="text">Подпишитесь на нашу рассылку и получите скидку 15% на вашу следующую покупку онлайн!
                </div>
