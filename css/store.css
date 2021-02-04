@@ -536,11 +536,17 @@ main {
     padding-top: 15px;
   }
   input[id="icon-view"]:checked + label + input + label + main > div.product-cell .img-container {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
   }
   input[id="icon-view"]:checked + label + input + label + main > div.product-cell .buttons {
     margin: 90% auto auto auto;
+  }
+  input[id="icon-view"]:checked + label + input + label + main > div.product-cell .links {
+    padding-left: 10px;
+  }
+  input[id="icon-view"]:checked + label + input + label + main > div.product-cell .info li {
+    margin-bottom: 7px;
   }
 }
 

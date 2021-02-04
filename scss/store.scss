@@ -451,10 +451,18 @@ main {
    }
    input[id="icon-view"]:checked + label + input + label + main > div.product-cell {
       .img-container {
-         flex-basis: 50%;
+         flex-basis: 55%;
       }
       .buttons {
          margin: 90% auto auto auto;
+      }
+      .links{
+         padding-left: 10px;
+      }
+      .info{
+         li{
+            margin-bottom: 7px;
+         }
       }
    }
 }
