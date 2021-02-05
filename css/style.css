@@ -22,7 +22,7 @@ body {
   margin: 0px auto;
 }
 
-@media only all and (max-width: 1170px) {
+@media only all and (max-width: 1190px) {
   .container {
     margin: 0px 10px;
     width: calc(100% - 20px);
