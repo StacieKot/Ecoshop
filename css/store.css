@@ -223,8 +223,7 @@ input.check-filter:checked + .filter-name::after {
   width: 70%;
   padding-left: 5px;
   line-height: 30px;
-  min-height: 30px;
-  /*Для IE*/
+  min-height: 30px; /*Для IE*/
 }
 
 .filter-by-price label {
@@ -368,7 +367,7 @@ input[id="icon-view"]:checked + label + input + label + main > div.product-cell 
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
-  padding-bottom: 0px;
+  padding-bottom: 0px; /* Высота img определяется высотой flex-контейнера*/
 }
 
 input[id="icon-view"]:checked + label + input + label + main > div.product-cell .links {
@@ -431,7 +430,7 @@ main {
 
 .product-cell .img-container {
   position: relative;
-  padding-bottom: 130%;
+  padding-bottom: 130%; /* у .img-container width и padding-bottom (и box-sizing: border-box;) заданы в % от ширины родительского контейнера, следоватьльно img( position:absolute, width:100% и height:100%), вложенный в .img-container, будет адаптироваться под размеры экрана */
 }
 
 @media only all and (max-width: 860px) {

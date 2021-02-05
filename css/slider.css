@@ -14,7 +14,7 @@
 }
 
 .products-slider .slide .img-container {
-  padding-bottom: 130%; 
+  padding-bottom: 130%;  /* у .img-container width и padding-bottom (и box-sizing: border-box;) заданы в % от ширины родительского контейнера, следоватьльно img( position:absolute, width:100% и height:100%), вложенный в .img-container, будет адаптироваться под размеры экрана */
   position: relative;
 }
 
