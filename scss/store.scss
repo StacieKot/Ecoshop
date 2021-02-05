@@ -304,7 +304,7 @@ input[id="icon-view"]:checked + label + input + label + main > div.product-cell 
    border-top: 1px solid $border-color;
    .img-container {
       flex: 0 0 30%;
-      padding-bottom: 0px;
+      padding-bottom: 0px; /* Высота img определяется высотой flex-контейнера*/
    }
    .links {
       flex: 1 1 auto;
@@ -351,7 +351,7 @@ main {
    }
    .img-container {
       position: relative;
-      padding-bottom: 130%;
+      padding-bottom: 130%; /* у .img-container width и padding-bottom (и box-sizing: border-box;) заданы в % от ширины родительского контейнера, следоватьльно img( position:absolute, width:100% и height:100%), вложенный в .img-container, будет адаптироваться под размеры экрана */
    }
 }
 

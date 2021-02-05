@@ -70,7 +70,7 @@ p {
       position: relative;
       overflow: hidden;
       .img-container {
-         padding-bottom: 140%;
+         padding-bottom: 140%; /* у .img-container width и padding-bottom (и box-sizing: border-box;) заданы в % от ширины родительского контейнера, следоватьльно img( position:absolute, width:100% и height:100%), вложенный в .img-container, будет адаптироваться под размеры экрана */
          img {
             visibility: hidden;
             &:hover {
