@@ -143,6 +143,11 @@ header {
   padding: 7px 0px;
 }
 
+.logo img {
+  width: 200px;
+  height: 46px;
+}
+
 header a {
   line-height: 20px;
 }
@@ -416,6 +421,7 @@ header a {
   }
   .logo img {
     width: 100%;
+    height: auto;
   }
 }
 
