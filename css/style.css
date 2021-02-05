@@ -624,7 +624,7 @@ a.button {
   padding: 25px;
 }
 
-.login > a,
+.login > div:first-child,
 .login form > a {
   font-family: "Playfair Display", serif;
   font-size: 12px;
@@ -632,8 +632,7 @@ a.button {
   color: #4d8ff5;
 }
 
-.login > a:hover,
-.login form > a:hover {
+.login form a:hover {
   font-weight: bold;
 }
 
@@ -843,6 +842,10 @@ input[name="like"] {
 
 input[name="like"]:checked + .icon-heart {
   color: #eb437c;
+}
+
+input[name="icon-cart"]:checked + .icon-cart {
+  color: #ffe115;
 }
 
 .product-cell .buttons {

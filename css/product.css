@@ -368,8 +368,12 @@ p {
 }
 
 .reviews-item .review .review-data > div {
-  display: inline-block;
   margin-right: 20px;
+  display: inline-block;
+}
+
+.reviews-item .review .review-data > div:nth-child(4) {
+  margin-top: 20px;
 }
 
 .reviews-item .review .review-data span {
@@ -378,6 +382,10 @@ p {
 
 .reviews-item .review .review-data form {
   display: inline-block;
+}
+
+.reviews-item .review .review-data .icon-star-full {
+  color: #ffe115;
 }
 
 .reviews-item .nickname {

@@ -542,18 +542,18 @@ a.button {
    right: -40px;
    top: 80%;
    padding: 25px;
-   > a,
+   > div:first-child,
    form > a {
       font-family: "Playfair Display", serif;
       font-size: 12px;
       font-weight: 400;
       color: #4d8ff5;
-      &:hover {
-         font-weight: bold;
-      }
    }
    form {
       a {
+         &:hover {
+            font-weight: bold;
+         }
          &:first-of-type {
             float: right;
          }
@@ -727,6 +727,9 @@ input[name="like"] {
 }
 input[name="like"]:checked + .icon-heart {
    color: #eb437c;
+}
+input[name="icon-cart"]:checked + .icon-cart {
+   color: $maincolor;
 }
 .product-cell {
    .buttons {
