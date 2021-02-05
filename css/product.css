@@ -234,6 +234,18 @@ p {
   float: right;
 }
 
+.product-info input[id=addtocart] {
+  display: none;
+}
+
+.product-info input[id=addtocart]:checked + label {
+  background-color: #ffe115;
+}
+
+.product-info .button {
+  display: block;
+}
+
 .details-block input {
   display: none;
 }

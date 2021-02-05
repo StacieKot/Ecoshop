@@ -158,6 +158,15 @@ p {
          }
       }
    }
+   input[id=addtocart]{
+      display: none;
+   }
+   input[id=addtocart]:checked+label{
+      background-color: $maincolor;
+   }
+   .button{
+display: block;
+   }
 }
 .details-block {
    input {
